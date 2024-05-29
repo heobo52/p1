@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dong-a</title>
+    <style>
+
+        :root{
+            --sub-color: #035a71;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        button{
+        	all: unset; 
+        }
+
+        a {
+            text-decoration: none;
+            color: #222;
+            cursor:pointer;
+        }
+
+        #header-container{
+            margin: 0 auto;
+            padding: 0 16px;
+
+            width: 100%;
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            box-sizing: border-box;
+        }
+
+        .header-container2{
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .header-nav-contents{
+            min-width: 520px;
+            display: flex;
+            align-items: center;
+            list-style: none;
+
+            gap: 30px;
+        }
+
+        .nav-font-st{
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* ------------헤더 */
+
+
+        #main-section{
+            padding: 0 16px;
+            background-image: url(./dong-a-img/main-img2.jpg);
+            background-size: cover;
+            background-position: 30%;
+            /* width: 100%; */
+            height: 900px;
+
+            margin-bottom: 80px;
+        }
+
+        .section-w{
+            margin: 0 auto;
+            width: 1280px;
+            height: 100%;
+
+            display: flex;
+            align-items: center;
+        }
+        
+        .text-container>h2{
+            font-size: 60px;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+
+        .text-container>.p1{
+            font-size: 30px;
+            margin-bottom: 42px;
+        }
+
+        .text-container>.p2{
+            font-size: 20px;
+            line-height: 36px;
+        }
+
+
+        #main-section:hover{
+            color: white;
+        }
+
+
+        /* ---------------------메인1 */
+
+        #centroll{
+            padding: 0 16px;
+            margin: 0 auto;
+            width: 1280px;
+        }
+
+        /* --------------------------1280중간 통일양식 */
+
+        #representative-performance{
+            height: 990px;
+        }
+
+        .table-of-contentes-container{
+            margin-bottom: 100px;
+        }
+
+        .toc-title{
+            font-size: 45px;
+            font-weight: bold;
+            color: var(--sub-color);
+
+            margin-bottom: 15px;
+        }
+
+        .toc-substance{
+            font-size: 30px;
+            color: var(--sub-color);
+            margin-bottom: 35px;
+        }
+
+        .line-btn{
+            cursor:pointer;
+            width: 200px;
+            height: 45px;
+            font-size: 20px;
+            background-color: none;
+            border: 1px solid #035a71 ;
+            border-radius: 25px;
+            text-align: center;
+
+            margin-bottom: 50px;
+        }
+
+        .line-btn:hover{
+            background-color: var(--sub-color);
+            color: white;
+        }
+
+        /* ---------------------------메인2 */
+
+        #new-product{
+            width: 100%;
+            height: 2360px;
+            background-image: url(./dong-a-img/new-produt-bgi.jpg);
+        }
+
+        .new-product-container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            gap: 16px;
+        }
+
+        .product-content{
+            width: 524px;
+            height: 616px;
+            border-radius: 8px;
+        }
+
+        .differnt-c{
+            width: 740px;
+            top: 100px;
+        }
+
+        .differnt-t{
+            margin-top: 280px;
+        }
+
+        .product-text-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .product-main-img{
+            width: 100%;
+            height: 420px;
+            border-radius: 8px 8px 0px 0px;
+
+            margin-bottom: 20px;
+        }
+
+        .prodct-content-sub{
+            font-size: 20px;
+
+            margin-bottom: 8px;
+        }
+
+        .prodct-content-title{
+            font-size: 30px;
+            font-weight: bold;
+            color: var(--sub-color);
+            text-align: center;
+
+            margin-bottom: 12px;
+        }
+
+        .prodct-content-substance{
+            font-size: 20px;
+        }
+
+        .npc-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            gap: 16px;
+        }
+
+    </style>
+</head> 
+<body>
+    <header id="header-container">
+        <div class="header-container2">
+            <div class="logo-container">
+                <svg width="181" height="32" viewBox="0 0 181 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-h-st">
+                    <g opacity="0.7" clip-path="url(#clip0_116_613)">
+                        <path d="M103.512 3.61133V28.9312H107.722V14.9393H112.087V11.9028H107.722V3.61133H103.512Z" fill="#221E1F"/>
+                        <path d="M89.6948 3.29553C83.9669 3.29553 79.3242 8.86638 79.3242 15.749C79.3242 22.6316 83.9669 28.2024 89.6948 28.2024C95.4227 28.2024 100.065 22.6235 100.065 15.749C100.065 8.87448 95.4227 3.29553 89.6948 3.29553ZM89.6948 25.6842C86.2842 25.6842 83.5263 21.2389 83.5263 15.749C83.5263 10.2591 86.2842 5.81375 89.6948 5.81375C93.1054 5.81375 95.8633 10.2591 95.8633 15.749C95.8633 21.2389 93.0973 25.6842 89.6948 25.6842Z" fill="#221E1F"/>
+                        <path d="M75.8254 14.1457H62.3053V12.0404H74.0467V9.63559H50.1886V6.38862H74.0467V3.98376H45.9783V9.50603C45.9783 10.9068 47.2349 12.0404 48.7852 12.0404H57.7115V14.1376H44.1914V16.672H75.8254V14.1376V14.1457Z" fill="#221E1F"/>
+                        <path d="M45.7812 23.8866C45.7812 27.2469 52.1537 29.9595 60.0194 29.9595C67.8851 29.9595 74.2576 27.2388 74.2576 23.8866C74.2576 20.5344 67.8851 17.8137 60.0194 17.8137C52.1537 17.8137 45.7812 20.5344 45.7812 23.8866ZM69.7944 23.8218C69.7944 25.8785 65.4128 27.5546 60.0194 27.5546C54.626 27.5546 50.2363 25.8785 50.2363 23.8218C50.2363 21.7651 54.6179 20.089 60.0194 20.089C65.4209 20.089 69.7944 21.7651 69.7944 23.8218Z" fill="#221E1F"/>
+                        <path d="M176.667 14.0324H181V11.6275H176.667V8.96355H181V6.5587H176.667V3.61133H172.457V18.8016H176.667V14.0324Z" fill="#221E1F"/>
+                        <path d="M144.193 3.61133H140.113V28.9312H144.193V3.61133Z" fill="#221E1F"/>
+                        <path d="M137.852 28.9312V3.61133H133.976V11.9028H129.398V14.9393H133.976V28.9312H137.852Z" fill="#221E1F"/>
+                        <path d="M158.528 3.31171C152.735 3.31171 148.043 6.64774 148.043 10.7611C148.043 14.8745 152.735 18.2105 158.528 18.2105C164.321 18.2105 169.013 14.8745 169.013 10.7611C169.013 6.64774 164.321 3.31171 158.528 3.31171ZM158.52 15.8056C155.044 15.8056 152.229 13.5384 152.229 10.7368C152.229 7.93519 155.044 5.66798 158.52 5.66798C161.996 5.66798 164.811 7.93519 164.811 10.7368C164.811 13.5384 161.996 15.8056 158.52 15.8056Z" fill="#221E1F"/>
+                        <path d="M151.16 22.5992H172.464V28.9231H176.675V20.0648H151.16V22.5992Z" fill="#221E1F"/>
+                        <path d="M123.491 20.1052C125.286 22.4777 127.971 24.3077 130.525 25.6032L131.904 23.2146C129.023 21.5627 127.057 19.3036 125.825 16.4777C126.894 14.2591 127.465 11.8623 127.465 9.44938V6.33197C127.465 5.10929 126.469 4.11334 125.237 4.11334H115.985V6.64776H123.124V9.44938C123.124 15.5142 119.926 21.3846 114.418 23.587L115.577 25.6437C118.84 24.4129 121.517 22.4615 123.491 20.0971V20.1052Z" fill="#221E1F"/>
+                        <path d="M11.903 31.7652C11.903 31.7652 12.0254 25.6275 11.2258 23.3441C10.4098 21.0607 9.5123 17.3765 3.49882 13.5385C1.40186 12.1943 0.708307 12.3158 0.496162 12.4372C0.275858 12.5587 -0.0505177 13.1174 0.00659809 15.587C0.0718733 18.0648 -0.115793 24.8583 2.81343 27.8542C5.74266 30.8502 8.01097 31.5627 11.903 31.7652Z" fill="#00ACCC"/>
+                        <path d="M16.653 15.5708C21.361 8.09715 28.4434 5.46557 29.2185 5.23075C29.8876 5.03642 30.2221 4.81779 30.2792 4.26719C30.3445 3.74087 29.4796 2.60727 26.9828 1.43318C23.5722 -0.178157 16.653 -1.88933e-05 16.653 -1.88933e-05C16.653 -1.88933e-05 9.742 -0.178157 6.33137 1.43318C3.8346 2.60727 2.96154 3.74087 3.02681 4.26719C3.09209 4.81779 3.41031 5.02832 4.08754 5.23075C4.85452 5.46557 11.9532 8.09715 16.653 15.5708Z" fill="#00ACCC"/>
+                        <path d="M16.6509 32C17.8911 32 19.0253 31.9433 20.0697 31.8785C20.0697 31.8785 20.1921 26.3563 19.8494 24.3077C19.474 22.0243 18.6826 18.421 16.6509 15.6356C14.6355 18.4129 13.8359 22.0243 13.4606 24.3077C13.126 26.3563 13.2484 31.8785 13.2484 31.8785C14.2847 31.9514 15.427 32 16.6509 32Z" fill="#00ACCC"/>
+                        <path d="M21.4012 31.7652C21.4012 31.7652 21.2788 25.6275 22.0865 23.3441C22.9025 21.0607 23.8082 17.3765 29.8135 13.5385C31.9105 12.1943 32.604 12.3158 32.8162 12.4372C33.0365 12.5587 33.3628 13.1174 33.2976 15.587C33.2404 18.0648 33.4281 24.8583 30.4989 27.8542C27.5697 30.8502 25.3013 31.5627 21.4012 31.7652Z" fill="#00ACCC"/>
+                        <path d="M2.08096 7.06879C1.65667 6.98782 1.37109 6.56676 1.37109 6.11332C1.37109 5.56271 1.81986 5.11737 2.36654 5.11737C2.45629 5.11737 2.6358 5.14166 2.76635 5.20644C2.76635 5.20644 7.2785 7.23883 10.1261 10.9554L10.0527 11.0688C6.25042 8.11332 2.08096 7.06879 2.08096 7.06879Z" fill="#00ACCC"/>
+                        <path d="M1.06787 9.36843C0.643584 9.26317 0.325368 8.8907 0.309049 8.43725C0.29273 7.88665 0.717019 7.40082 1.27186 7.40082C1.40241 7.40082 1.58192 7.43321 1.72063 7.48989C1.72063 7.48989 6.26541 9.31985 9.11304 12.7692L9.03145 12.8664C5.05782 10.0729 1.06787 9.36843 1.06787 9.36843Z" fill="#00ACCC"/>
+                        <path d="M0.872092 11.8704C0.455962 11.7733 0.154064 11.4089 0.137745 10.9797C0.113267 10.4453 0.529397 9.96759 1.07608 9.96759C1.10871 9.96759 1.28822 9.96759 1.45957 10.0324C1.45957 10.0324 5.84117 11.8056 8.1258 14.5506L8.05236 14.672C4.24192 12.2591 0.872092 11.8785 0.872092 11.8785V11.8704Z" fill="#00ACCC"/>
+                        <path d="M31.2252 7.06879C31.6577 6.98782 31.9432 6.56676 31.9432 6.11332C31.9432 5.56271 31.4863 5.11737 30.9315 5.11737C30.8499 5.11737 30.6704 5.14166 30.5317 5.20644C30.5317 5.20644 26.0113 7.23883 23.1719 10.9554L23.2453 11.0688C27.0557 8.11332 31.217 7.06879 31.217 7.06879H31.2252Z" fill="#00ACCC"/>
+                        <path d="M32.2451 9.36843C32.6612 9.26317 32.9794 8.8907 32.9957 8.43725C33.0202 7.88665 32.5796 7.40082 32.0329 7.40082C31.9105 7.40082 31.7229 7.43321 31.5842 7.48989C31.5842 7.48989 27.0394 9.31985 24.1836 12.7692L24.2652 12.8664C28.2388 10.0729 32.2369 9.36033 32.2369 9.36033L32.2451 9.36843Z" fill="#00ACCC"/>
+                        <path d="M32.4337 11.8704C32.8417 11.7733 33.1518 11.4089 33.1599 10.9797C33.1926 10.4453 32.7764 9.96759 32.2379 9.96759C32.189 9.96759 32.0176 9.96759 31.8463 10.0324C31.8463 10.0324 27.4565 11.8056 25.1719 14.5506L25.2453 14.672C29.0394 12.2591 32.4256 11.8785 32.4256 11.8785L32.4337 11.8704Z" fill="#00ACCC"/>
+                    </g> 
+                    <defs>
+                        <clipPath id="clip0_116_613">
+                            <rect width="181" height="32" fill="white"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+            </div>
+            <nav class="header-nav-container">
+                <ul class="header-nav-contents">
+                    <a href="#"><li class="nav-font-st">기업소개</li></a>
+                    <a href="#"><li class="nav-font-st">제품정보</li></a>
+                    <a href="#"><li class="nav-font-st">연구개발</li></a>
+                    <a href="#"><li class="nav-font-st">채용정보</li></a>
+                    <a href="#"><li class="nav-font-st">고객지원</li></a>
+                </ul>
+            </nav>
+        </div>
+            <div class="header-icon-container">
+                <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.875 11.375H34.125M7.875 21H34.125M7.875 30.625H34.125" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+        </header>
+
+        <main>
+            <section id="main-section">
+                <div class="section-w">
+                    <div class="text-container">
+                        <h2>Global Healthcare Player</h2>
+                        <p class="p1">인류의 건강과 행복을 위한 끝없는 도전</p>
+                        <p class="p2">도전이 있기에 변화가 있고, 변화가 있기에 내일의 발전이 있을 수  있음을 믿습니다.<br>
+                            변화하지 않는 단 하나의 가치 '건강과 행복'을 위해<br>
+                            동국제약은 고객님의 소중한 의견을 귀담아 듣고 일상을 건강하고 행복하게 만드는 일에 집중하겠습니다. </p>
+                    </div>
+                 </div>
+            </section>
+
+            <section id="centroll">
+            <section id="representative-performance">
+                <div class="table-of-contentes-container">
+                    <h2 class="toc-title">Representative Performance</h2>
+                    <p class="toc-substance">대표 성과</p>
+                    <button class="line-btn">더보기</button>
+                </div>
+
+                <div class="my-slide">
+                    <div class="content"><img src="" alt="1"></div>
+                    <div class="content"><img src="" alt="2"></div>
+                    <div class="content"><img src="" alt="3"></div>
+                    <div class="content"><img src="" alt="4"></div>
+                    <div class="content"><img src="" alt="5"></div>
+                </div>
+            </section>
+
+            <section class="new-product">
+                <div class="table-of-contentes-container">
+                    <h2 class="toc-title">New Product</h2>
+                    <p class="toc-substance">신제품</p>
+                </div>
+
+                <div class="npc-container">
+                <div class="new-product-container">
+                    <div class="product-content">
+                        <img src="./dong-a-img/product-img1.jpg" alt="멜라토닝크림img" class="product-main-img">
+                        <div class="product-text-container">
+                            <p class="prodct-content-sub">#색소침착치료제</p>
+                            <h3 class="prodct-content-title">멜라토닝 크림</h3>
+                            <p class="prodct-content-substance">멜라닌 색소 생성을 억제하여 과다 침착된 멜라닌을</p>
+                            <p class="prodct-content-substance">점진적으로 표백하여 작용으로 색소를 치료</p>
+                        </div>
+                    </div>
+                    
+                    <div class="product-content differnt-c differnt-t">
+                        <img src="./dong-a-img/product-img2.jpg" alt="트러블세럼img" class="product-main-img differnt-c">
+                        <div class="product-text-container">
+                            <p class="prodct-content-sub">#트러블해방세럼</p>
+                            <h3 class="prodct-content-title">파티온 노스카나 트러블 세럼</h3>
+                            <p class="prodct-content-substance">10배 더 강력한 트러블 진정 노스타나인 세럼</p>
+                            <p class="prodct-content-substance">9년간 연구한 동아제약 특허 진정 성분 46% 첨가</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="new-product-container">
+                    <div class="product-content differnt-c">
+                        <img src="./dong-a-img/product-img2.jpg" alt="트러블세럼img" class="product-main-img differnt-c">
+                        <div class="product-text-container">
+                            <p class="prodct-content-sub">#트러블해방세럼</p>
+                            <h3 class="prodct-content-title">파티온 노스카나 트러블 세럼</h3>
+                            <p class="prodct-content-substance">10배 더 강력한 트러블 진정 노스타나인 세럼</p>
+                            <p class="prodct-content-substance">9년간 연구한 동아제약 특허 진정 성분 46% 첨가</p>
+                        </div>
+                    </div>
+
+                    <div class="product-content differnt-t">
+                        <img src="./dong-a-img/product-img1.jpg" alt="멜라토닝크림img" class="product-main-img">
+                        <div class="product-text-container">
+                            <p class="prodct-content-sub">#색소침착치료제</p>
+                            <h3 class="prodct-content-title">멜라토닝 크림</h3>
+                            <p class="prodct-content-substance">멜라닌 색소 생성을 억제하여 과다 침착된 멜라닌을</p>
+                            <p class="prodct-content-substance">점진적으로 표백하여 작용으로 색소를 치료</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+        </section>
+        </main>
+</body>
+</html>
