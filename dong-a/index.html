@@ -105,16 +105,14 @@
 
         /* ---------------------메인1 */
 
-        #centroll{
-            padding: 0 16px;
-            margin: 0 auto;
-            width: 1280px;
-        }
-
-        /* --------------------------1280중간 통일양식 */
-
         #representative-performance{
+            margin: 0 auto;
+            padding: 0 16px;
+
             height: 990px;
+            width: 1280px;
+            display: flex;
+            flex-direction: column;
         }
 
         .table-of-contentes-container{
@@ -159,19 +157,29 @@
             width: 100%;
             height: 2360px;
             background-image: url(./dong-a-img/new-produt-bgi.jpg);
+            background-position: 45%;
+
+            display: flex;
+            justify-content: center;
         }
 
         .new-product-container{
             display: flex;
-            align-items: center;
-            justify-content: center;
 
             gap: 16px;
+        }
+
+        .w-h-container{
+            width: 1280px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
         .product-content{
             width: 524px;
             height: 616px;
+            background-color: white;
             border-radius: 8px;
         }
 
@@ -181,7 +189,7 @@
         }
 
         .differnt-t{
-            margin-top: 280px;
+            margin-top: 300px;
         }
 
         .product-text-container{
@@ -222,8 +230,17 @@
             flex-direction: column;
             align-items: center;
 
-            gap: 16px;
+            gap: 50px;
         }
+
+        /* ----------------- */
+
+        #brand-story-info{
+            display: flex;
+            justify-content: center;
+            width: 1282px;
+        }
+
 
     </style>
 </head> 
@@ -291,8 +308,8 @@
                  </div>
             </section>
 
-            <section id="centroll">
             <section id="representative-performance">
+                <img src="" alt="">
                 <div class="table-of-contentes-container">
                     <h2 class="toc-title">Representative Performance</h2>
                     <p class="toc-substance">대표 성과</p>
@@ -308,59 +325,68 @@
                 </div>
             </section>
 
-            <section class="new-product">
-                <div class="table-of-contentes-container">
-                    <h2 class="toc-title">New Product</h2>
-                    <p class="toc-substance">신제품</p>
+            <section id="new-product">
+                <div class="w-h-container">
+                    <div class="table-of-contentes-container">
+                        <h2 class="toc-title">New Product</h2>
+                        <p class="toc-substance">신제품</p>
+                    </div>
+    
+                    <div class="npc-container">
+                    <div class="new-product-container">
+                        <div class="product-content">
+                            <img src="./dong-a-img/product-img1.jpg" alt="멜라토닝크림img" class="product-main-img">
+                            <div class="product-text-container">
+                                <p class="prodct-content-sub">#색소침착치료제</p>
+                                <h3 class="prodct-content-title">멜라토닝 크림</h3>
+                                <p class="prodct-content-substance">멜라닌 색소 생성을 억제하여 과다 침착된 멜라닌을</p>
+                                <p class="prodct-content-substance">점진적으로 표백하여 작용으로 색소를 치료</p>
+                            </div>
+                        </div>
+                        
+                        <div class="product-content differnt-c differnt-t">
+                            <img src="./dong-a-img/product-img2.jpg" alt="트러블세럼img" class="product-main-img differnt-c">
+                            <div class="product-text-container">
+                                <p class="prodct-content-sub">#트러블해방세럼</p>
+                                <h3 class="prodct-content-title">파티온 노스카나 트러블 세럼</h3>
+                                <p class="prodct-content-substance">10배 더 강력한 트러블 진정 노스타나인 세럼</p>
+                                <p class="prodct-content-substance">9년간 연구한 동아제약 특허 진정 성분 46% 첨가</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="new-product-container">
+                        <div class="product-content differnt-c">
+                            <img src="./dong-a-img/product-img2.jpg" alt="트러블세럼img" class="product-main-img differnt-c">
+                            <div class="product-text-container">
+                                <p class="prodct-content-sub">#비타민C</p>
+                                <h3 class="prodct-content-title">비타그란</h3>
+                                <p class="prodct-content-substance">현대인의 필수 영양소 비타민C를 분말,정제,</p>
+                                <p class="prodct-content-substance">츄어블 속에 꼭꼭 담아 언제 어디서든 간편하게 제공</p>
+                            </div>
+                        </div>
+    
+                        <div class="product-content differnt-t">
+                            <img src="./dong-a-img/product-img1.jpg" alt="멜라토닝크림img" class="product-main-img">
+                            <div class="product-text-container">
+                                <p class="prodct-content-sub">#혈행개선</p>
+                                <h3 class="prodct-content-title">써큐란 알파</h3>
+                                <p class="prodct-content-substance">혈행 및 기억력 개선에 도움을 줄 수 있으며,</p>
+                                <p class="prodct-content-substance">고령화 사회에 접어든 현대인의 건강 고민 해결!</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="npc-container">
-                <div class="new-product-container">
-                    <div class="product-content">
-                        <img src="./dong-a-img/product-img1.jpg" alt="멜라토닝크림img" class="product-main-img">
-                        <div class="product-text-container">
-                            <p class="prodct-content-sub">#색소침착치료제</p>
-                            <h3 class="prodct-content-title">멜라토닝 크림</h3>
-                            <p class="prodct-content-substance">멜라닌 색소 생성을 억제하여 과다 침착된 멜라닌을</p>
-                            <p class="prodct-content-substance">점진적으로 표백하여 작용으로 색소를 치료</p>
-                        </div>
-                    </div>
-                    
-                    <div class="product-content differnt-c differnt-t">
-                        <img src="./dong-a-img/product-img2.jpg" alt="트러블세럼img" class="product-main-img differnt-c">
-                        <div class="product-text-container">
-                            <p class="prodct-content-sub">#트러블해방세럼</p>
-                            <h3 class="prodct-content-title">파티온 노스카나 트러블 세럼</h3>
-                            <p class="prodct-content-substance">10배 더 강력한 트러블 진정 노스타나인 세럼</p>
-                            <p class="prodct-content-substance">9년간 연구한 동아제약 특허 진정 성분 46% 첨가</p>
-                        </div>
-                    </div>
                 </div>
-
-                <div class="new-product-container">
-                    <div class="product-content differnt-c">
-                        <img src="./dong-a-img/product-img2.jpg" alt="트러블세럼img" class="product-main-img differnt-c">
-                        <div class="product-text-container">
-                            <p class="prodct-content-sub">#트러블해방세럼</p>
-                            <h3 class="prodct-content-title">파티온 노스카나 트러블 세럼</h3>
-                            <p class="prodct-content-substance">10배 더 강력한 트러블 진정 노스타나인 세럼</p>
-                            <p class="prodct-content-substance">9년간 연구한 동아제약 특허 진정 성분 46% 첨가</p>
-                        </div>
-                    </div>
-
-                    <div class="product-content differnt-t">
-                        <img src="./dong-a-img/product-img1.jpg" alt="멜라토닝크림img" class="product-main-img">
-                        <div class="product-text-container">
-                            <p class="prodct-content-sub">#색소침착치료제</p>
-                            <h3 class="prodct-content-title">멜라토닝 크림</h3>
-                            <p class="prodct-content-substance">멜라닌 색소 생성을 억제하여 과다 침착된 멜라닌을</p>
-                            <p class="prodct-content-substance">점진적으로 표백하여 작용으로 색소를 치료</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
             </section>
-        </section>
+
+            <section id="brand-story-info">
+                <div class="table-of-contentes-container">
+                    <h2 class="toc-title">Brand Story & Prodct Info</h2>
+                    <p class="toc-substance">브랜드 스토리 & 제품정보</p>
+                    <p class="toc-sub-title">동아제약의 창업 정신인<br>“좋은 의약품을 생산해 국민 건강에 이바지한다”는 가장 소중하게 지켜온 가치이자 신념입니다.</p>
+                </div>
+            </section>
         </main>
 </body>
 </html>
