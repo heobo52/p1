@@ -8,6 +8,7 @@
 
         :root{
             --sub-color: #035a71;
+            --main-color:#00a0c9;
         }
 
         *{
@@ -124,7 +125,7 @@
         }
 
         .table-of-contentes-container{
-            margin-bottom: 100px;
+            margin-bottom: 70px;
         }
 
 
@@ -156,7 +157,7 @@
             height: 45px;
             font-size: 20px;
             background-color: none;
-            border: 1px solid #035a71 ;
+            border: 2px solid #035a71 ;
             border-radius: 25px;
             text-align: center;
 
@@ -194,25 +195,20 @@
 
         /* ---------------------------메인2 */
 
-        #new-product{
-            padding: 0px;
-
-            width: 100%;
-            height: 2360px;
-
+        #new-product{          
             background-image: url(./dong-a-img/new-produt-bgi.jpg);
             background-position: 45%;
             
             display: flex;
             justify-content: center;
         }
-    
+        
         .w-h-container{
             width: 1280px;
             
-            display: flex;
+            /* display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: center; */
         }
         
         .product-content{
@@ -282,9 +278,7 @@
         /* ----------------- */
 
         #brand-story-info{
-            display: flex;
-            flex-direction: column;
-            width: 1282px;
+            width: 1280px;
         }
 
         .brand-story-contents{
@@ -317,12 +311,21 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            overflow: hidden;
+
+            border-radius: 8px;
+        }
+
+        .story-btn-content:hover > img {
+            filter: brightness(0.5);
+            transform: scale(1.1);
         }
         
         .story-btn-img{
             height: 100%;
             object-fit: cover;
-            border-radius: 8px;
+            
+            transition: 0.2s;
         }
 
         .story-btn-text{
@@ -336,6 +339,163 @@
             width: 632px;
         }
 
+        /* ----------------------------- */
+
+        #mall-btn-container{
+            display: flex;
+            flex-direction: column;
+
+            gap: 80px;
+        }
+
+        /* .dong-a-logo-img{
+            width: 248px;
+            height: 191px;
+            left: 0;
+        } */
+
+        .m-b-container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .mall-title-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            text-align: center;
+
+            gap: 20px;
+        }
+
+        .differnt-fontsize{
+            font-size: 45px;
+            font-weight: bold;
+            color: var(--main-color);
+        }
+ 
+        .mall-title-container>p{
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        .m-b-content-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            gap: 40px;
+        }
+
+        .point-btn{
+            width: 414px;
+            height: 63px;
+
+            font-size: 30px;
+            border: 2px solid var(--main-color);
+            border-radius: 35px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .point-main-c{
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--main-color);
+        }
+
+        .m-b-content{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            flex-wrap: wrap;
+
+            gap: 16px;
+        }
+
+        .btn-content{
+            width: 416px;
+            height: 318px;
+
+            background-color: var(--main-color);
+
+            border-radius: 8px;
+        }
+
+        .mall-btn-link{
+            width: 100%;
+            height: 100%;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            gap: 25px;
+        }
+
+        .mall-btn-link>p{
+            font-size: 25px;
+            color: white;
+        }
+
+        .size-up-text{
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        /* ----------------------------- */
+
+        #corporate-social-responsibility{
+            height: 100%;
+            background-image: url(./dong-a-img/corporate-social-responsibility.png);
+            background-size: cover;
+            object-fit: cover;
+
+        }
+        /* 공용속성 */
+
+        .point-c-w{
+            color: white;
+        }
+
+        .point-l-w{
+            color: white;
+            border: 2px solid white ;
+        }
+
+        /*  */
+
+        .c-s-r-container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            flex-wrap: wrap;
+
+            gap: 16px;
+        }
+
+        .c-s-r-content{
+            width: 308px;
+            aspect-ratio: 1;
+
+            border-radius: 100%;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            gap: 20px;
+
+            background-color: var(--sub-color);
+        }
 
     </style>
 </head> 
@@ -343,35 +503,36 @@
     <header id="header-container">
         <div class="header-container2">
             <div class="logo-container">
-                <a href="#"><svg width="181" height="32" viewBox="0 0 181 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-h-st">
+                <a href="#"><svg width="158" height="28" viewBox="0 0 158 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g opacity="0.7" clip-path="url(#clip0_116_613)">
-                        <path d="M103.512 3.61133V28.9312H107.722V14.9393H112.087V11.9028H107.722V3.61133H103.512Z" fill="#221E1F"/>
-                        <path d="M89.6948 3.29553C83.9669 3.29553 79.3242 8.86638 79.3242 15.749C79.3242 22.6316 83.9669 28.2024 89.6948 28.2024C95.4227 28.2024 100.065 22.6235 100.065 15.749C100.065 8.87448 95.4227 3.29553 89.6948 3.29553ZM89.6948 25.6842C86.2842 25.6842 83.5263 21.2389 83.5263 15.749C83.5263 10.2591 86.2842 5.81375 89.6948 5.81375C93.1054 5.81375 95.8633 10.2591 95.8633 15.749C95.8633 21.2389 93.0973 25.6842 89.6948 25.6842Z" fill="#221E1F"/>
-                        <path d="M75.8254 14.1457H62.3053V12.0404H74.0467V9.63559H50.1886V6.38862H74.0467V3.98376H45.9783V9.50603C45.9783 10.9068 47.2349 12.0404 48.7852 12.0404H57.7115V14.1376H44.1914V16.672H75.8254V14.1376V14.1457Z" fill="#221E1F"/>
-                        <path d="M45.7812 23.8866C45.7812 27.2469 52.1537 29.9595 60.0194 29.9595C67.8851 29.9595 74.2576 27.2388 74.2576 23.8866C74.2576 20.5344 67.8851 17.8137 60.0194 17.8137C52.1537 17.8137 45.7812 20.5344 45.7812 23.8866ZM69.7944 23.8218C69.7944 25.8785 65.4128 27.5546 60.0194 27.5546C54.626 27.5546 50.2363 25.8785 50.2363 23.8218C50.2363 21.7651 54.6179 20.089 60.0194 20.089C65.4209 20.089 69.7944 21.7651 69.7944 23.8218Z" fill="#221E1F"/>
-                        <path d="M176.667 14.0324H181V11.6275H176.667V8.96355H181V6.5587H176.667V3.61133H172.457V18.8016H176.667V14.0324Z" fill="#221E1F"/>
-                        <path d="M144.193 3.61133H140.113V28.9312H144.193V3.61133Z" fill="#221E1F"/>
-                        <path d="M137.852 28.9312V3.61133H133.976V11.9028H129.398V14.9393H133.976V28.9312H137.852Z" fill="#221E1F"/>
-                        <path d="M158.528 3.31171C152.735 3.31171 148.043 6.64774 148.043 10.7611C148.043 14.8745 152.735 18.2105 158.528 18.2105C164.321 18.2105 169.013 14.8745 169.013 10.7611C169.013 6.64774 164.321 3.31171 158.528 3.31171ZM158.52 15.8056C155.044 15.8056 152.229 13.5384 152.229 10.7368C152.229 7.93519 155.044 5.66798 158.52 5.66798C161.996 5.66798 164.811 7.93519 164.811 10.7368C164.811 13.5384 161.996 15.8056 158.52 15.8056Z" fill="#221E1F"/>
-                        <path d="M151.16 22.5992H172.464V28.9231H176.675V20.0648H151.16V22.5992Z" fill="#221E1F"/>
-                        <path d="M123.491 20.1052C125.286 22.4777 127.971 24.3077 130.525 25.6032L131.904 23.2146C129.023 21.5627 127.057 19.3036 125.825 16.4777C126.894 14.2591 127.465 11.8623 127.465 9.44938V6.33197C127.465 5.10929 126.469 4.11334 125.237 4.11334H115.985V6.64776H123.124V9.44938C123.124 15.5142 119.926 21.3846 114.418 23.587L115.577 25.6437C118.84 24.4129 121.517 22.4615 123.491 20.0971V20.1052Z" fill="#221E1F"/>
-                        <path d="M11.903 31.7652C11.903 31.7652 12.0254 25.6275 11.2258 23.3441C10.4098 21.0607 9.5123 17.3765 3.49882 13.5385C1.40186 12.1943 0.708307 12.3158 0.496162 12.4372C0.275858 12.5587 -0.0505177 13.1174 0.00659809 15.587C0.0718733 18.0648 -0.115793 24.8583 2.81343 27.8542C5.74266 30.8502 8.01097 31.5627 11.903 31.7652Z" fill="#00ACCC"/>
-                        <path d="M16.653 15.5708C21.361 8.09715 28.4434 5.46557 29.2185 5.23075C29.8876 5.03642 30.2221 4.81779 30.2792 4.26719C30.3445 3.74087 29.4796 2.60727 26.9828 1.43318C23.5722 -0.178157 16.653 -1.88933e-05 16.653 -1.88933e-05C16.653 -1.88933e-05 9.742 -0.178157 6.33137 1.43318C3.8346 2.60727 2.96154 3.74087 3.02681 4.26719C3.09209 4.81779 3.41031 5.02832 4.08754 5.23075C4.85452 5.46557 11.9532 8.09715 16.653 15.5708Z" fill="#00ACCC"/>
-                        <path d="M16.6509 32C17.8911 32 19.0253 31.9433 20.0697 31.8785C20.0697 31.8785 20.1921 26.3563 19.8494 24.3077C19.474 22.0243 18.6826 18.421 16.6509 15.6356C14.6355 18.4129 13.8359 22.0243 13.4606 24.3077C13.126 26.3563 13.2484 31.8785 13.2484 31.8785C14.2847 31.9514 15.427 32 16.6509 32Z" fill="#00ACCC"/>
-                        <path d="M21.4012 31.7652C21.4012 31.7652 21.2788 25.6275 22.0865 23.3441C22.9025 21.0607 23.8082 17.3765 29.8135 13.5385C31.9105 12.1943 32.604 12.3158 32.8162 12.4372C33.0365 12.5587 33.3628 13.1174 33.2976 15.587C33.2404 18.0648 33.4281 24.8583 30.4989 27.8542C27.5697 30.8502 25.3013 31.5627 21.4012 31.7652Z" fill="#00ACCC"/>
-                        <path d="M2.08096 7.06879C1.65667 6.98782 1.37109 6.56676 1.37109 6.11332C1.37109 5.56271 1.81986 5.11737 2.36654 5.11737C2.45629 5.11737 2.6358 5.14166 2.76635 5.20644C2.76635 5.20644 7.2785 7.23883 10.1261 10.9554L10.0527 11.0688C6.25042 8.11332 2.08096 7.06879 2.08096 7.06879Z" fill="#00ACCC"/>
-                        <path d="M1.06787 9.36843C0.643584 9.26317 0.325368 8.8907 0.309049 8.43725C0.29273 7.88665 0.717019 7.40082 1.27186 7.40082C1.40241 7.40082 1.58192 7.43321 1.72063 7.48989C1.72063 7.48989 6.26541 9.31985 9.11304 12.7692L9.03145 12.8664C5.05782 10.0729 1.06787 9.36843 1.06787 9.36843Z" fill="#00ACCC"/>
-                        <path d="M0.872092 11.8704C0.455962 11.7733 0.154064 11.4089 0.137745 10.9797C0.113267 10.4453 0.529397 9.96759 1.07608 9.96759C1.10871 9.96759 1.28822 9.96759 1.45957 10.0324C1.45957 10.0324 5.84117 11.8056 8.1258 14.5506L8.05236 14.672C4.24192 12.2591 0.872092 11.8785 0.872092 11.8785V11.8704Z" fill="#00ACCC"/>
-                        <path d="M31.2252 7.06879C31.6577 6.98782 31.9432 6.56676 31.9432 6.11332C31.9432 5.56271 31.4863 5.11737 30.9315 5.11737C30.8499 5.11737 30.6704 5.14166 30.5317 5.20644C30.5317 5.20644 26.0113 7.23883 23.1719 10.9554L23.2453 11.0688C27.0557 8.11332 31.217 7.06879 31.217 7.06879H31.2252Z" fill="#00ACCC"/>
-                        <path d="M32.2451 9.36843C32.6612 9.26317 32.9794 8.8907 32.9957 8.43725C33.0202 7.88665 32.5796 7.40082 32.0329 7.40082C31.9105 7.40082 31.7229 7.43321 31.5842 7.48989C31.5842 7.48989 27.0394 9.31985 24.1836 12.7692L24.2652 12.8664C28.2388 10.0729 32.2369 9.36033 32.2369 9.36033L32.2451 9.36843Z" fill="#00ACCC"/>
-                        <path d="M32.4337 11.8704C32.8417 11.7733 33.1518 11.4089 33.1599 10.9797C33.1926 10.4453 32.7764 9.96759 32.2379 9.96759C32.189 9.96759 32.0176 9.96759 31.8463 10.0324C31.8463 10.0324 27.4565 11.8056 25.1719 14.5506L25.2453 14.672C29.0394 12.2591 32.4256 11.8785 32.4256 11.8785L32.4337 11.8704Z" fill="#00ACCC"/>
-                    </g> 
+                    <path d="M90.3555 3.15991V25.3148H94.0307V13.0719H97.8413V10.415H94.0307V3.15991H90.3555Z" fill="#221E1F"/>
+                    <path d="M78.295 2.88361C73.2949 2.88361 69.2422 7.7581 69.2422 13.7804C69.2422 19.8026 73.2949 24.6771 78.295 24.6771C83.295 24.6771 87.3478 19.7955 87.3478 13.7804C87.3478 7.76519 83.295 2.88361 78.295 2.88361ZM78.295 22.4737C75.3177 22.4737 72.9103 18.584 72.9103 13.7804C72.9103 8.97672 75.3177 5.08705 78.295 5.08705C81.2722 5.08705 83.6796 8.97672 83.6796 13.7804C83.6796 18.584 81.2651 22.4737 78.295 22.4737Z" fill="#221E1F"/>
+                    <path d="M66.1884 12.3775H54.3863V10.5354H64.6357V8.43118H43.8093V5.59009H64.6357V3.48584H40.1341V8.31782C40.1341 9.54353 41.2309 10.5354 42.5842 10.5354H50.3763V12.3705H38.5742V14.5881H66.1884V12.3705V12.3775Z" fill="#221E1F"/>
+                    <path d="M39.9648 20.9008C39.9648 23.8411 45.5276 26.2146 52.3937 26.2146C59.2599 26.2146 64.8226 23.834 64.8226 20.9008C64.8226 17.9676 59.2599 15.587 52.3937 15.587C45.5276 15.587 39.9648 17.9676 39.9648 20.9008ZM60.9266 20.8441C60.9266 22.6437 57.1017 24.1103 52.3937 24.1103C47.6857 24.1103 43.8538 22.6437 43.8538 20.8441C43.8538 19.0445 47.6786 17.5779 52.3937 17.5779C57.1089 17.5779 60.9266 19.0445 60.9266 20.8441Z" fill="#221E1F"/>
+                    <path d="M154.218 12.2783H158V10.1741H154.218V7.84311H158V5.73886H154.218V3.15991H150.543V16.4514H154.218V12.2783Z" fill="#221E1F"/>
+                    <path d="M125.87 3.15991H122.309V25.3148H125.87V3.15991Z" fill="#221E1F"/>
+                    <path d="M120.336 25.3148V3.15991H116.953V10.415H112.957V13.0719H116.953V25.3148H120.336Z" fill="#221E1F"/>
+                    <path d="M138.383 2.89777C133.326 2.89777 129.23 5.81679 129.23 9.41598C129.23 13.0152 133.326 15.9342 138.383 15.9342C143.44 15.9342 147.535 13.0152 147.535 9.41598C147.535 5.81679 143.44 2.89777 138.383 2.89777ZM138.376 13.83C135.342 13.83 132.884 11.8461 132.884 9.39473C132.884 6.94331 135.342 4.95951 138.376 4.95951C141.41 4.95951 143.867 6.94331 143.867 9.39473C143.867 11.8461 141.41 13.83 138.376 13.83Z" fill="#221E1F"/>
+                    <path d="M131.949 19.7743H150.546V25.3077H154.222V17.5567H131.949V19.7743Z" fill="#221E1F"/>
+                    <path d="M107.799 17.5921C109.366 19.668 111.71 21.2692 113.939 22.4028L115.143 20.3127C112.628 18.8674 110.912 16.8907 109.836 14.418C110.769 12.4767 111.268 10.3795 111.268 8.26821V5.54048C111.268 4.47064 110.399 3.59918 109.323 3.59918H101.246V5.81679H107.479V8.26821C107.479 13.5749 104.687 18.7115 99.8789 20.6387L100.89 22.4383C103.739 21.3613 106.076 19.6538 107.799 17.585V17.5921Z" fill="#221E1F"/>
+                    <path d="M10.3905 27.7945C10.3905 27.7945 10.4973 22.4241 9.7993 20.4261C9.08704 18.4281 8.30356 15.2045 3.05422 11.8462C1.22372 10.67 0.618301 10.7763 0.433114 10.8826C0.240805 10.9889 -0.0440983 11.4777 0.00575966 13.6387C0.0627402 15.8067 -0.101079 21.751 2.45592 24.3725C5.01293 26.9939 6.993 27.6174 10.3905 27.7945Z" fill="#00ACCC"/>
+                    <path d="M14.5344 13.6245C18.6441 7.085 24.8265 4.78237 25.5031 4.57691C26.0872 4.40687 26.3792 4.21557 26.4291 3.73379C26.486 3.27326 25.731 2.28136 23.5515 1.25403C20.5743 -0.155887 14.5344 -1.65317e-05 14.5344 -1.65317e-05C14.5344 -1.65317e-05 8.50154 -0.155887 5.52431 1.25403C3.3448 2.28136 2.58269 3.27326 2.63967 3.73379C2.69665 4.21557 2.97443 4.39978 3.5656 4.57691C4.23512 4.78237 10.4318 7.085 14.5344 13.6245Z" fill="#00ACCC"/>
+                    <path d="M14.5361 28C15.6187 28 16.6087 27.9504 17.5204 27.8937C17.5204 27.8937 17.6273 23.0617 17.3281 21.2692C17.0005 19.2712 16.3096 16.1184 14.5361 13.6812C12.7768 16.1113 12.0788 19.2712 11.7511 21.2692C11.4591 23.0617 11.5659 27.8937 11.5659 27.8937C12.4705 27.9575 13.4677 28 14.5361 28Z" fill="#00ACCC"/>
+                    <path d="M18.6816 27.7945C18.6816 27.7945 18.5747 22.4241 19.2799 20.4261C19.9921 18.4281 20.7827 15.2045 26.0249 11.8462C27.8554 10.67 28.4609 10.7763 28.646 10.8826C28.8383 10.9889 29.1233 11.4777 29.0663 13.6387C29.0164 15.8067 29.1802 21.751 26.6232 24.3725C24.0662 26.9939 22.0861 27.6174 18.6816 27.7945Z" fill="#00ACCC"/>
+                    <path d="M1.81498 6.18521C1.4446 6.11436 1.19531 5.74594 1.19531 5.34918C1.19531 4.8674 1.58705 4.47772 2.06427 4.47772C2.14261 4.47772 2.29931 4.49898 2.41327 4.55566C2.41327 4.55566 6.35205 6.334 8.83783 9.58602L8.77373 9.68521C5.45461 7.09918 1.81498 6.18521 1.81498 6.18521Z" fill="#00ACCC"/>
+                    <path d="M0.932328 8.19737C0.561954 8.10526 0.284174 7.77935 0.269929 7.38259C0.255684 6.90081 0.626057 6.47571 1.11039 6.47571C1.22435 6.47571 1.38105 6.50405 1.50213 6.55364C1.50213 6.55364 5.46941 8.15486 7.95518 11.1731L7.88396 11.2581C4.41526 8.81376 0.932328 8.19737 0.932328 8.19737Z" fill="#00ACCC"/>
+                    <path d="M0.759115 10.3866C0.395864 10.3016 0.132329 9.98275 0.118084 9.60725C0.096716 9.13963 0.459967 8.72162 0.937179 8.72162C0.96567 8.72162 1.12237 8.72162 1.27194 8.7783C1.27194 8.7783 5.09676 10.3299 7.09108 12.7317L7.02698 12.838C3.70074 10.7267 0.759115 10.3937 0.759115 10.3937V10.3866Z" fill="#00ACCC"/>
+                    <path d="M27.2565 6.18521C27.634 6.11436 27.8833 5.74594 27.8833 5.34918C27.8833 4.8674 27.4845 4.47772 27.0001 4.47772C26.9289 4.47772 26.7722 4.49898 26.6511 4.55566C26.6511 4.55566 22.7052 6.334 20.2266 9.58602L20.2907 9.68521C23.6169 7.09918 27.2494 6.18521 27.2494 6.18521H27.2565Z" fill="#00ACCC"/>
+                    <path d="M28.1465 8.19737C28.5097 8.10526 28.7875 7.77935 28.8018 7.38259C28.8231 6.90081 28.4385 6.47571 27.9613 6.47571C27.8544 6.47571 27.6906 6.50405 27.5695 6.55364C27.5695 6.55364 23.6023 8.15486 21.1094 11.1731L21.1806 11.2581C24.6493 8.81376 28.1394 8.19028 28.1394 8.19028L28.1465 8.19737Z" fill="#00ACCC"/>
+                    <path d="M28.3117 10.3866C28.6679 10.3016 28.9385 9.98275 28.9457 9.60725C28.9741 9.13963 28.6109 8.72162 28.1408 8.72162C28.0981 8.72162 27.9485 8.72162 27.7989 8.7783C27.7989 8.7783 23.967 10.3299 21.9727 12.7317L22.0368 12.838C25.3488 10.7267 28.3046 10.3937 28.3046 10.3937L28.3117 10.3866Z" fill="#00ACCC"/>
+                    </g>
                     <defs>
-                        <clipPath id="clip0_116_613">
-                            <rect width="181" height="32" fill="white"/>
-                        </clipPath>
+                    <clipPath id="clip0_116_613">
+                    <rect width="158" height="28" fill="white"/>
+                    </clipPath>
                     </defs>
-                </svg></a>
+                    </svg>
+                    </a>
             </div>
             <nav class="header-nav-container">
                 <ul class="header-nav-contents">
@@ -472,63 +633,139 @@
                             </div>
                         </div>
                     </div>
-                    </div>
                 </div>
             </section>
 
             <section id="brand-story-info">
                 <div class="r-p-container">
-                <div class="table-of-contentes-container">
-                    <h2 class="toc-title">Brand Story & Prodct Info</h2>
-                    <p class="toc-substance">브랜드 스토리 & 제품정보</p>
-                    <p class="toc-sub-title">동아제약의 창업 정신인<br>“좋은 의약품을 생산해 국민 건강에 이바지한다”는 가장 소중하게 지켜온 가치이자 신념입니다.</p>
-                </div>
-
-                <div class="brand-story-contents">
-                    <div class="btn-line">
-                        <button class="green-btn">판매약국 찾기</button>
+                    <div class="table-of-contentes-container">
+                        <h2 class="toc-title">Brand Story & Prodct Info</h2>
+                        <p class="toc-substance">브랜드 스토리 & 제품정보</p>
+                        <p class="toc-sub-title">동아제약의 창업 정신인<br>“좋은 의약품을 생산해 국민 건강에 이바지한다”는 가장 소중하게 지켜온 가치이자 신념입니다.</p>
                     </div>
 
-                    <div class="brand-story-nav-btn">
-                        <div class="story-container">
-                            <a href="#" class="story-btn-content">
-                                <img src="./dong-a-img/story-btn-img1.jpg" alt="약" class="story-btn-img">
-                                <p class="story-btn-text">일반 의약품</p>
-                            </a>
+                    <div class="brand-story-contents">
+                        <div class="btn-line">
+                            <button class="green-btn">판매약국 찾기</button>
                         </div>
 
-                        <div class="story-container">
-                            <a href="#" class="story-btn-content">
-                                <img src="./dong-a-img/story-btn-img2.jpg" alt="약" class="story-btn-img">
-                                <p class="story-btn-text">의약외품</p>
-                            </a>
-                        </div>
+                        <div class="brand-story-nav-btn">
+                            <div class="story-container">
+                                <a href="#" class="story-btn-content">
+                                    <img src="./dong-a-img/story-btn-img1.jpg" alt="약" class="story-btn-img">
+                                    <p class="story-btn-text">일반 의약품</p>
+                                </a>
+                            </div>
 
-                        <div class="story-container">
-                            <a href="#" class="story-btn-content">
-                                <img src="./dong-a-img/story-btn-img3.jpg" alt="약" class="story-btn-img">
-                                <p class="story-btn-text">건강기능식품</p>
-                            </a>
-                        </div>
+                            <div class="story-container">
+                                <a href="#" class="story-btn-content">
+                                    <img src="./dong-a-img/story-btn-img2.jpg" alt="약" class="story-btn-img">
+                                    <p class="story-btn-text">의약외품</p>
+                                </a>
+                            </div>
 
-                        <div class="story-container same2">
-                            <a href="#" class="story-btn-content">
-                                <img src="./dong-a-img/story-btn-img1.jpg" alt="약" class="story-btn-img">
-                                <p class="story-btn-text">생활건강/화장품</p>
-                            </a>
-                        </div>
+                            <div class="story-container">
+                                <a href="#" class="story-btn-content">
+                                    <img src="./dong-a-img/story-btn-img3.jpg" alt="약" class="story-btn-img">
+                                    <p class="story-btn-text">건강기능식품</p>
+                                </a>
+                            </div>
 
-                        <div class="story-container same2">
-                            <a href="#" class="story-btn-content">
-                                <img src="./dong-a-img/story-btn-img5.jpg" alt="약" class="story-btn-img">
-                                <p class="story-btn-text">제품FAQ/제품소식</p>
-                            </a>
-                        </div>
+                            <div class="story-container same2">
+                                <a href="#" class="story-btn-content">
+                                    <img src="./dong-a-img/story-btn-img1.jpg" alt="약" class="story-btn-img">
+                                    <p class="story-btn-text">생활건강/화장품</p>
+                                </a>
+                            </div>
 
+                            <div class="story-container same2">
+                                <a href="#" class="story-btn-content">
+                                    <img src="./dong-a-img/story-btn-img5.jpg" alt="약" class="story-btn-img">
+                                    <p class="story-btn-text">제품FAQ/제품소식</p>
+                                </a>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
-            </div>
+            </section>
+
+            <section id="mall-btn-container">
+                <div class="m-b-container">
+                    <!-- <div class="dong-a-mall-logo-container">
+                        <img src="./dong-a-img/dong-a-mall-logo-img.png" alt="dongaiconimg" class="dong-a-logo-img">
+                     </div> -->
+    
+                     <div class="mall-title-container">
+                        <h2 class="differnt-fontsize">Just to make you happy smile: That's the our motive</h2>
+                        <p>안락한 공간에서 가족의 사랑과 일상의 행복을 마주하며 하나의 공간에서 다양한 브랜드를 알아가며<br>
+                            즐겁게 쇼핑하고 진심 어린 제품으로 당신의 삶이 특별하다고 느껴지도록<br>
+                            소소하지만 공감가는 행복한 이야기를 나누고자 합니다</p>
+                        <p>오늘의 건강함과 행복한 이야기를 담아가세요</p>
+                     </div>
+                </div> 
+
+                <div class="m-b-content-container">
+                    <p class="point-btn">원하는 제품 한 눈에 찾기</p>
+                    <p class="point-main-c">동국제약 공식 브랜드몰</p>
+                    <div class="m-b-content">
+                        <div class="btn-content">
+                            <a href="#" class="mall-btn-link">
+                                <p>공식 브랜드몰</p>
+                                <p class="size-up-text">:Dmall</p>
+                            </a>
+                        </div>
+
+                        <div class="btn-content">
+                            <a href="#" class="mall-btn-link">
+                                <p>일반의약품 공식 브랜드몰</p>
+                                <p class="size-up-text">:Dpharm</p>
+                            </a>
+                        </div>
+
+                        <div class="btn-content">
+                            <a href="#" class="mall-btn-link">
+                                <p>더마 코스메틱 공식 브랜드몰</p>
+                                <p class="size-up-text">FATION</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="corporate-social-responsibility">
+                <div class="r-p-container">
+                    <div class="table-of-contentes-container">
+                        <h2 class="toc-title point-c-w">Corporate Social Responsibility</h2>
+                        <p class="toc-substance point-c-w">기업의 사회적 책임</p>
+                        <p class="toc-sub-title point-c-w">동아제약은 ‘함께성장’의 사회공헌 철학을 바탕으로<br>
+                            기업으로서 사회적 책임을 다하고자 노력하고 있습니다.</p>
+                        <button class="line-btn point-l-w">바로가기</button>
+                    </div>
+
+                    <div class="c-s-r-container">
+                        <div class="c-s-r-content">
+                            <p>건강</p>
+                            <p>국민과 사회의 건강증진</p>
+                        </div>
+
+                        <div class="c-s-r-content">
+                            <p>사회</p>
+                            <p>사회구성원 모두의 행복한 삶</p>
+                        </div>
+
+                        <div class="c-s-r-content">
+                            <p>환경</p>
+                            <p>미래 세대를 위한 깨끗한 환경</p>
+                        </div>
+                        
+                        <div class="c-s-r-content">
+                            <p>사람</p>
+                            <p>사회에 기여하는 인재육성</p>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
 </body>
-</html>
+</html> 
