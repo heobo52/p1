@@ -15,6 +15,11 @@
             padding: 0;
         }
 
+        img{
+            display: block;
+            width: 100%;
+        }
+
         button{
         	all: unset; 
         }
@@ -60,21 +65,23 @@
 
         /* ------------헤더 */
 
-
-        #main-section{
-            padding: 0 16px;
-            background-image: url(./dong-a-img/main-img2.jpg);
-            background-size: cover;
-            background-position: 30%;
-            /* width: 100%; */
-            height: 900px;
+        section{
+            padding: 0 32px;
+            margin: 0 auto;
 
             margin-bottom: 80px;
         }
 
+        #main-section{
+            background-image: url(./dong-a-img/main-img2.jpg);
+            background-size: cover;
+            background-position: 30%;
+            height: 900px;
+
+            /* margin-bottom: 80px; */
+        }
+
         .section-w{
-            margin: 0 auto;
-            width: 1280px;
             height: 100%;
 
             display: flex;
@@ -106,18 +113,22 @@
         /* ---------------------메인1 */
 
         #representative-performance{
-            margin: 0 auto;
-            padding: 0 16px;
-
             height: 990px;
-            width: 1280px;
             display: flex;
             flex-direction: column;
+            align-items: center;
+        }
+        
+        .r-p-container{
+            width: 1280px;
         }
 
         .table-of-contentes-container{
             margin-bottom: 100px;
         }
+
+
+        /* 공통 관리 목록 ↓ 버튼/목차 */
 
         .toc-title{
             font-size: 45px;
@@ -130,6 +141,12 @@
         .toc-substance{
             font-size: 30px;
             color: var(--sub-color);
+            margin-bottom: 35px;
+        }
+
+        .toc-sub-title{
+            font-size: 20px;
+            line-height: 40px;
             margin-bottom: 35px;
         }
 
@@ -146,50 +163,77 @@
             margin-bottom: 50px;
         }
 
+        .btn-line{
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .green-btn{
+            cursor:pointer;
+            width: 200px;
+            height: 54px;
+            font-size: 20px;
+            background-color: var(--sub-color);
+            color: white;
+            border-radius: 35px;
+            text-align: center;
+        }
+
         .line-btn:hover{
             background-color: var(--sub-color);
             color: white;
         }
 
+        .green-btn:hover{
+            background-color: white;
+            font-weight: bold;
+            border: 2px solid #035a71 ;
+            color: var(--sub-color);
+            box-sizing: border-box;
+        }
+
         /* ---------------------------메인2 */
 
         #new-product{
+            padding: 0px;
+
             width: 100%;
             height: 2360px;
+
             background-image: url(./dong-a-img/new-produt-bgi.jpg);
             background-position: 45%;
-
+            
             display: flex;
             justify-content: center;
         }
-
-        .new-product-container{
-            display: flex;
-
-            gap: 16px;
-        }
-
+    
         .w-h-container{
             width: 1280px;
+            
             display: flex;
             flex-direction: column;
             justify-content: center;
         }
-
+        
         .product-content{
             width: 524px;
             height: 616px;
             background-color: white;
             border-radius: 8px;
         }
-
+        
         .differnt-c{
             width: 740px;
             top: 100px;
         }
-
+        
         .differnt-t{
             margin-top: 300px;
+        }
+        
+        .new-product-container{
+            display: flex;
+            gap: 16px;
         }
 
         .product-text-container{
@@ -202,6 +246,8 @@
             width: 100%;
             height: 420px;
             border-radius: 8px 8px 0px 0px;
+
+            object-fit: cover;
 
             margin-bottom: 20px;
         }
@@ -236,10 +282,58 @@
         /* ----------------- */
 
         #brand-story-info{
-            margin: 0 auto;
             display: flex;
             flex-direction: column;
             width: 1282px;
+        }
+
+        .brand-story-contents{
+            display: flex;
+            flex-direction: column;
+
+            gap: 12px;
+        }
+
+        .story-container{
+            position: relative;
+            width: 413px;
+            height: 270px;
+        }
+
+        .brand-story-nav-btn{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            gap: 16px;
+
+            flex-wrap: wrap;
+        }
+
+        .story-btn-content{
+            width: 100%;
+            height: 100%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .story-btn-img{
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .story-btn-text{
+            position: absolute;
+            font-size: 30px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .same2{
+            width: 632px;
         }
 
 
@@ -310,20 +404,21 @@
             </section>
 
             <section id="representative-performance">
-                <img src="" alt="">
-                <div class="table-of-contentes-container">
-                    <h2 class="toc-title">Representative Performance</h2>
-                    <p class="toc-substance">대표 성과</p>
-                    <button class="line-btn">더보기</button>
+                <div class="r-p-container">
+                    <div class="table-of-contentes-container">
+                        <h2 class="toc-title">Representative Performance</h2>
+                        <p class="toc-substance">대표 성과</p>
+                        <button class="line-btn">더보기</button>
+                    </div>
                 </div>
-
-                <div class="my-slide">
-                    <div class="content"><img src="" alt="1"></div>
-                    <div class="content"><img src="" alt="2"></div>
-                    <div class="content"><img src="" alt="3"></div>
-                    <div class="content"><img src="" alt="4"></div>
-                    <div class="content"><img src="" alt="5"></div>
-                </div>
+    
+                    <div class="my-slide">
+                        <div class="content"><img src="" alt="1"></div>
+                        <div class="content"><img src="" alt="2"></div>
+                        <div class="content"><img src="" alt="3"></div>
+                        <div class="content"><img src="" alt="4"></div>
+                        <div class="content"><img src="" alt="5"></div>
+                    </div>
             </section>
 
             <section id="new-product">
@@ -358,7 +453,7 @@
     
                     <div class="new-product-container">
                         <div class="product-content differnt-c">
-                            <img src="./dong-a-img/product-img2.jpg" alt="트러블세럼img" class="product-main-img differnt-c">
+                            <img src="./dong-a-img/product-img3.png" alt="트러블세럼img" class="product-main-img differnt-c">
                             <div class="product-text-container">
                                 <p class="prodct-content-sub">#비타민C</p>
                                 <h3 class="prodct-content-title">비타그란</h3>
@@ -368,7 +463,7 @@
                         </div>
     
                         <div class="product-content differnt-t">
-                            <img src="./dong-a-img/product-img1.jpg" alt="멜라토닝크림img" class="product-main-img">
+                            <img src="./dong-a-img/product-img4.png" alt="멜라토닝크림img" class="product-main-img">
                             <div class="product-text-container">
                                 <p class="prodct-content-sub">#혈행개선</p>
                                 <h3 class="prodct-content-title">써큐란 알파</h3>
@@ -377,11 +472,12 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                    </div>
                 </div>
             </section>
 
             <section id="brand-story-info">
+                <div class="r-p-container">
                 <div class="table-of-contentes-container">
                     <h2 class="toc-title">Brand Story & Prodct Info</h2>
                     <p class="toc-substance">브랜드 스토리 & 제품정보</p>
@@ -389,16 +485,49 @@
                 </div>
 
                 <div class="brand-story-contents">
-                    <button class="green-btn">판매약국 찾기</button>
+                    <div class="btn-line">
+                        <button class="green-btn">판매약국 찾기</button>
+                    </div>
 
                     <div class="brand-story-nav-btn">
-                        <a href="#">
-                            <div class="story-btn-content">
-                            <p class="story-content-text">일반 의약품</p>
-                             </div>
-                        </a>
+                        <div class="story-container">
+                            <a href="#" class="story-btn-content">
+                                <img src="./dong-a-img/story-btn-img1.jpg" alt="약" class="story-btn-img">
+                                <p class="story-btn-text">일반 의약품</p>
+                            </a>
+                        </div>
+
+                        <div class="story-container">
+                            <a href="#" class="story-btn-content">
+                                <img src="./dong-a-img/story-btn-img2.jpg" alt="약" class="story-btn-img">
+                                <p class="story-btn-text">의약외품</p>
+                            </a>
+                        </div>
+
+                        <div class="story-container">
+                            <a href="#" class="story-btn-content">
+                                <img src="./dong-a-img/story-btn-img3.jpg" alt="약" class="story-btn-img">
+                                <p class="story-btn-text">건강기능식품</p>
+                            </a>
+                        </div>
+
+                        <div class="story-container same2">
+                            <a href="#" class="story-btn-content">
+                                <img src="./dong-a-img/story-btn-img1.jpg" alt="약" class="story-btn-img">
+                                <p class="story-btn-text">생활건강/화장품</p>
+                            </a>
+                        </div>
+
+                        <div class="story-container same2">
+                            <a href="#" class="story-btn-content">
+                                <img src="./dong-a-img/story-btn-img5.jpg" alt="약" class="story-btn-img">
+                                <p class="story-btn-text">제품FAQ/제품소식</p>
+                            </a>
+                        </div>
+
                     </div>
                 </div>
+            </div>
             </section>
         </main>
 </body>
