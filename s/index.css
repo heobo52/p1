@@ -1,0 +1,368 @@
+:root{
+    --sub-color: #035a71;
+    --main-color:#00a0c9;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+button{
+    all: unset; 
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+    cursor:pointer;
+}
+
+#header-container{
+    margin: 0 auto;
+    padding: 0 16px;
+
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-sizing: border-box;
+}
+
+.header-container2{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.header-nav-contents{
+    min-width: 520px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+
+    gap: 30px;
+}
+
+.nav-font-st{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* ------------헤더 */
+
+section{
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+#dong-a-main{
+    height: 900px;
+    background-image: url(../dong-a/dong-a-img/main-img2.jpg);
+    background-size: cover;
+
+    display: flex;
+
+}
+
+#dong-a-main>.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#representaive-perfomance{
+    width: 1280px;
+}
+
+
+.fixed-text-container{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#new-product{
+    background-image: url(../dong-a/dong-a-img/new-produt-bgi.jpg);
+
+    display: flex;
+    justify-content: center;
+
+    background-size: cover;
+    object-fit: cover;
+            
+}
+
+.content-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.content1{
+    height: 100%;
+    background-color: gray;
+    border-radius: 8px;
+}
+
+.content2{
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    border-radius: 8px;
+}
+
+.n-p-img{
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.n-p-text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+
+    text-align: center;
+    padding: 10px;
+}
+
+.cotent2-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.diff-content{
+    margin-top: 300px;
+}
+
+
+.n-p-c-container{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#brand-story-prodct-info{
+    width: 1280px;
+    /* 이거 때문에 wrap이 적용 안됫음 확인할 것 */
+}
+
+
+.story-container{
+    position: relative;
+    width: 413px;
+    height: 270px;
+}
+
+.brand-story-nav-btn{
+    width: 1280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 16px;
+
+    flex-wrap: wrap;
+}
+
+.story-btn-content{
+    width:100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    border-radius: 8px;
+}
+
+.story-btn-content:hover > img {
+    filter: brightness(0.5);
+    transform: scale(1.1);
+}
+
+.story-btn-img{
+    height: 100%;
+    object-fit: cover;
+    
+    transition: 0.2s;
+}
+
+.story-btn-text{
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.same2{
+    width: 632px;
+}
+
+#mall-btn-container{
+    display: flex;
+    flex-direction: column;
+
+    gap: 80px;
+}
+
+.m-b-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mall-title-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    gap: 20px;
+}
+
+.differnt-fontsize{
+    font-size: 45px;
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+.mall-title-container>p{
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.m-b-content-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 40px;
+}
+
+.point-btn{
+    width: 414px;
+    height: 63px;
+
+    font-size: 30px;
+    border: 2px solid var(--main-color);
+    border-radius: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.point-main-c{
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+.m-b-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 16px;
+}
+
+.btn-content{
+    width: 416px;
+    height: 318px;
+
+    background-color: var(--main-color);
+
+    border-radius: 8px;
+}
+
+.mall-btn-link{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 25px;
+}
+
+.mall-btn-link>p{
+    font-size: 25px;
+    color: white;
+}
+
+.size-up-text{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#corporate-social-responsibility{
+    display: flex;
+    justify-content: center;
+
+    background-image: url(../dong-a/dong-a-img/corporate-social-responsibility.png);
+    background-size: cover;
+    object-fit: cover;
+    height: 100vh;
+}
+
+.same-container{
+    width: 1280px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+
+
+.c-s-r-content-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 50px;
+}
+
+.c-s-r-content{
+    width: 308px;
+    aspect-ratio: 1;
+
+    transition: 1s;
+
+    border-radius: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color:rgba(0, 160, 201, 0.6);
+
+    gap: 16px;
+}
+
+.c-s-r-content:hover{
+    transform: scale(1.1);
+}

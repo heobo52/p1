@@ -520,18 +520,27 @@
             background-color: var(--sub-color);
             height: 100%;
         }
+
+        .n-n-content-container{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            flex-wrap: wrap;
+
+            gap: 16px;
+        
+        }
+
         .news-content-container{
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            align-items: flex-end;
 
             gap: 20px;
         }
 
-        .news-content-container>button{
-            margin-bottom: none;
-            justify-content: right;
-        }
 
         .news-content{
             background-image: url(./dong-a-img/news-main-img.png);
@@ -544,8 +553,12 @@
             border-radius: 8px;
             display: flex;
             flex-direction: column;
-            justify-content: center;    
+            justify-content: center
         }
+'
+
+
+    
     </style>
 </head> 
 <body>
@@ -741,9 +754,6 @@
 
             <section id="mall-btn-container">
                 <div class="m-b-container">
-                    <!-- <div class="dong-a-mall-logo-container">
-                        <img src="./dong-a-img/dong-a-mall-logo-img.png" alt="dongaiconimg" class="dong-a-logo-img">
-                     </div> -->
     
                      <div class="mall-title-container">
                         <h2 class="differnt-fontsize">Just to make you happy smile: That's the our motive</h2>
@@ -792,7 +802,7 @@
                         <button class="line-btn point-l-w">바로가기</button>
                     </div>
                 </div>
-
+                    
                     <div class="c-s-r-container">
                         <div class="c-s-r-content ">
                             <a href="#">
@@ -800,14 +810,14 @@
                                 <p>국민과 사회의 건강증진</p>
                             </a>
                         </div>
-
+                        
                         <div class="c-s-r-content">
                             <a href="#">
                                 <p class="c-s-r-text">사회</p>
                                 <p>사회구성원 모두의 행복한 삶</p>
                             </a>
                         </div>
-
+                        
                         <div class="c-s-r-content">
                             <a href="#">
                                 <p class="c-s-r-text">환경</p>
@@ -831,22 +841,34 @@
                         <p class="toc-substance point-c-w">뉴스 & 공지사항</p>
                         <p class="toc-sub-title point-c-w">동아제약의 새로운 소식 및 다양한 뉴스를 확인하세요.</p>
                     </div>
-                </div>
-
-                <div class="n-n-content-container">
-                    <div class="news-content-container">
-                        <div class="news-content">
-                            <p class="news-top">news</p>
-                            <div class="n-n-text-container">
-                                <h3 class="news-title">동아제약, '유기동물 보호' 임직원 봉사…"입양문화 확산"</h3>
-                                <p class="news-content-text">제약기업 동아제약이 지난 16일 동대문구에 위치한 유기동물 입양센터 발라당에서 유기동물보호 봉사활동을 진행했다.<br>
-                                    19일 동아제약에 따르면 이번 봉사활동은 지난 달 '동물과 함께 행복한 세상(동행)'과 유기동물 보호 및 입양 활성화를 위한 업무협약의 일환으로 진행됐다.</p>
+                    
+                    <div class="n-n-content-container">
+                        <div class="news-content-container">
+                            <div class="news-content">
+                                <p class="news-top">news</p>
+                                <div class="n-n-text-container">
+                                    <h3 class="n-n-title">동아제약, '유기동물 보호' 임직원 봉사…"입양문화 확산"</h3>
+                                    <p class="n-n-content-text">제약기업 동아제약이 지난 16일 동대문구에 위치한 유기동물 입양센터 발라당에서 유기동물보호 봉사활동을 진행했다.<br>
+                                        19일 동아제약에 따르면 이번 봉사활동은 지난 달 '동물과 함께 행복한 세상(동행)'과 유기동물 보호 및 입양 활성화를 위한 업무협약의 일환으로 진행됐다.</p>
+                                    <p class="n-n-date">2024-05-19</p>
+                                </div>
                             </div>
-                            <p class="news-date">2024-05-19</p>
+                                <button class="line-btn point-l-w">바로가기</button>
                         </div>
-                        <button class="line-btn point-l-w">바로가기</button>
+                        
+                        <div class="news-content-container">
+                            <div class="news-content">
+                                <p class="news-top">news</p>
+                                <div class="n-n-text-container">
+                                    <h3 class="n-n-title">동아제약, '유기동물 보호' 임직원 봉사…"입양문화 확산"</h3>
+                                    <p class="n-n-content-text">제약기업 동아제약이 지난 16일 동대문구에 위치한 유기동물 입양센터 발라당에서 유기동물보호 봉사활동을 진행했다.<br>
+                                        19일 동아제약에 따르면 이번 봉사활동은 지난 달 '동물과 함께 행복한 세상(동행)'과 유기동물 보호 및 입양 활성화를 위한 업무협약의 일환으로 진행됐다.</p>
+                                    <p class="n-n-date">2024-05-19</p>
+                                </div>
+                            </div>
+                            <button class="line-btn point-l-w">바로가기</button>
+                        </div>
                     </div>
-                </div>
             </section>
         </main>
 
