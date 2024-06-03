@@ -478,7 +478,7 @@
 
             flex-wrap: wrap;
 
-            gap: 16px;
+            gap: 50px;
         }
 
         .c-s-r-content{
@@ -492,11 +492,60 @@
             align-items: center;
             justify-content: center;
 
-            gap: 20px;
+            background-color:rgba(0, 160, 201, 0.6);
 
-            background-color: var(--sub-color);
+            font-size: 20px;
+            color: white;
+            font-weight: bold;
+
         }
 
+        .c-s-r-content>a{
+            text-align: center;
+            font-size: 20px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .c-s-r-text{
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .c-s-r-content:hover{
+            transform: scale(1.2);
+        }
+
+        #news-notice{
+            background-color: var(--sub-color);
+            height: 100%;
+        }
+        .news-content-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            gap: 20px;
+        }
+
+        .news-content-container>button{
+            margin-bottom: none;
+            justify-content: right;
+        }
+
+        .news-content{
+            background-image: url(./dong-a-img/news-main-img.png);
+            background-size: cover;
+            object-fit: cover;
+
+            filter: brightness(0.4);
+            width: 632px;
+            height: 308px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;    
+        }
     </style>
 </head> 
 <body>
@@ -742,30 +791,64 @@
                             기업으로서 사회적 책임을 다하고자 노력하고 있습니다.</p>
                         <button class="line-btn point-l-w">바로가기</button>
                     </div>
+                </div>
 
                     <div class="c-s-r-container">
-                        <div class="c-s-r-content">
-                            <p>건강</p>
-                            <p>국민과 사회의 건강증진</p>
+                        <div class="c-s-r-content ">
+                            <a href="#">
+                                <p class="c-s-r-text">건강</p>
+                                <p>국민과 사회의 건강증진</p>
+                            </a>
                         </div>
 
                         <div class="c-s-r-content">
-                            <p>사회</p>
-                            <p>사회구성원 모두의 행복한 삶</p>
+                            <a href="#">
+                                <p class="c-s-r-text">사회</p>
+                                <p>사회구성원 모두의 행복한 삶</p>
+                            </a>
                         </div>
 
                         <div class="c-s-r-content">
-                            <p>환경</p>
-                            <p>미래 세대를 위한 깨끗한 환경</p>
+                            <a href="#">
+                                <p class="c-s-r-text">환경</p>
+                                <p>미래 세대를 위한 깨끗한 환경</p>
+                            </a>
                         </div>
                         
                         <div class="c-s-r-content">
-                            <p>사람</p>
-                            <p>사회에 기여하는 인재육성</p>
+                            <a href="#">
+                                <p class="c-s-r-text">사람</p>
+                                <p>사회에 기여하는 인재육성</p>
+                            </a>
                         </div>
+                    </div>
+            </section>
+
+            <section id="news-notice">
+                <div class="r-p-container">
+                    <div class="table-of-contentes-container">
+                        <h2 class="toc-title point-c-w">News & Notice</h2>
+                        <p class="toc-substance point-c-w">뉴스 & 공지사항</p>
+                        <p class="toc-sub-title point-c-w">동아제약의 새로운 소식 및 다양한 뉴스를 확인하세요.</p>
+                    </div>
+                </div>
+
+                <div class="n-n-content-container">
+                    <div class="news-content-container">
+                        <div class="news-content">
+                            <p class="news-top">news</p>
+                            <div class="n-n-text-container">
+                                <h3 class="news-title">동아제약, '유기동물 보호' 임직원 봉사…"입양문화 확산"</h3>
+                                <p class="news-content-text">제약기업 동아제약이 지난 16일 동대문구에 위치한 유기동물 입양센터 발라당에서 유기동물보호 봉사활동을 진행했다.<br>
+                                    19일 동아제약에 따르면 이번 봉사활동은 지난 달 '동물과 함께 행복한 세상(동행)'과 유기동물 보호 및 입양 활성화를 위한 업무협약의 일환으로 진행됐다.</p>
+                            </div>
+                            <p class="news-date">2024-05-19</p>
+                        </div>
+                        <button class="line-btn point-l-w">바로가기</button>
                     </div>
                 </div>
             </section>
         </main>
+
 </body>
 </html> 
