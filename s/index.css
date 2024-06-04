@@ -61,22 +61,112 @@ a {
 section{
     margin: 0 auto;
     padding: 0 32px;
+
+    margin-bottom: 80px;
+}
+
+.main-title{
+    font-size: 45px;
+    font-weight: bold;
+    color: var(--sub-color);
+}
+
+.sub-title{
+    font-size: 30px;
+    color: var(--sub-color);
+}
+
+.sub-content{
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.line-btn{
+    cursor:pointer;
+    width: 200px;
+    height: 45px;
+    font-size: 20px;
+    background-color: none;
+    border: 2px solid #035a71 ;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.green-btn{
+    cursor:pointer;
+    width: 200px;
+    height: 54px;
+    font-size: 20px;
+    background-color: var(--sub-color);
+    color: white;
+    border-radius: 35px;
+    text-align: center;
+}
+
+.line-btn:hover{
+    background-color: var(--sub-color);
+    font-weight: bold;
+    color: white;
+    transition: 0.5s;
+}
+
+.green-btn:hover{
+    background-color: white;
+    font-weight: bold;
+    border: 2px solid #035a71 ;
+    color: var(--sub-color);
+    box-sizing: border-box;
+    transition: 0.5s;
 }
 
 #dong-a-main{
+    width: 100%;
     height: 900px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+}
+
+#dong-a-main::after{
+    width: 100%;
+    height: 100%;
+    content: "";
+
+    opacity: 0.8;
+
+    position: absolute;
+    top: 0;    
+    left: 0;
+    z-index: -1;
     background-image: url(../dong-a/dong-a-img/main-img2.jpg);
     background-size: cover;
-
-    display: flex;
-
+    background-position: 30%;
 }
+
 
 #dong-a-main>.main-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+
+    gap: 16px;
 }
+
+.main-container>h2{
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.main-container>.p1{
+    font-size: 30px;
+}
+
+.main-container>.p2{
+    font-size: 20px;
+    line-height: 32px;
+}
+
 
 #representaive-perfomance{
     width: 1280px;
@@ -86,6 +176,10 @@ section{
 .fixed-text-container{
     display: flex;
     flex-direction: column;
+
+    margin-bottom: 32px;
+
+    gap: 16px;
     
 }
 
@@ -109,15 +203,16 @@ section{
 }
 
 .content1{
+    width: 100%;
     height: 100%;
-    background-color: gray;
+    background-color: rgba(250, 250, 250, 0.911);
     border-radius: 8px;
 }
 
 .content2{
     width: 100%;
     height: 100%;
-    background-color: gray;
+    background-color: rgba(250, 250, 250, 0.911);
     border-radius: 8px;
 }
 
@@ -128,14 +223,32 @@ section{
     border-radius: 8px 8px 0 0;
 }
 
+
 .n-p-text-container{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-self: center;
 
+    gap: 8px;
+
     text-align: center;
     padding: 10px;
+}
+
+.prodct-content-sub{
+    font-size: 20px;
+}
+
+.prodct-content-title{
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--sub-color);
+    text-align: center;
+}
+
+.prodct-content-substance{
+    font-size: 20px;
 }
 
 .cotent2-container{
@@ -161,6 +274,11 @@ section{
     /* 이거 때문에 wrap이 적용 안됫음 확인할 것 */
 }
 
+.btn-line{
+    display: flex;
+    justify-content: end;
+    margin-bottom: 16px;
+}
 
 .story-container{
     position: relative;
@@ -221,8 +339,23 @@ section{
     gap: 80px;
 }
 
+.fixed-icon{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.dong-a-icon{
+    position: absolute;
+    width: 150px;
+    top: 0;
+    left: 0;
+    
+}
+
 .m-b-container{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -319,11 +452,9 @@ section{
 #corporate-social-responsibility{
     display: flex;
     justify-content: center;
-
     background-image: url(../dong-a/dong-a-img/corporate-social-responsibility.png);
     background-size: cover;
-    object-fit: cover;
-    height: 100vh;
+    height: 900px;
 }
 
 .same-container{
@@ -333,16 +464,22 @@ section{
     flex-direction: column;
     justify-content: center;
 
+}
 
+.sort-gap{
+    display: flex;
+    flex-direction: column;
+
+    gap: 110px;
 }
 
 
 .c-s-r-content-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    gap: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        flex-wrap: wrap;
 }
 
 .c-s-r-content{
@@ -361,6 +498,20 @@ section{
     background-color:rgba(0, 160, 201, 0.6);
 
     gap: 16px;
+}
+
+.title-color-diff{
+    color: white;
+}
+
+.c-s-r-content>p{
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.c-s-r-content>.diff-font-size{
+    font-size: 20px;
 }
 
 .c-s-r-content:hover{
