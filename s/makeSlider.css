@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    padding: 0 32px;
+}
+
+button{
+    all: unset; 
+}
+
+.section-container {
+    max-width: 1280px;
+    margin: 0 auto;
+
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 700px;
+}
+
+.slide-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.contents-wrapper {
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    transform: translateX(0);
+    transition: 1s;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: rgba(175, 175, 175, 0.26);
+
+}
+
+.text-container{
+    width: 638px;
+    height: 100%;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.text-title{
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--sub-color);
+}
+
+.text-content{
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.slider-interface {
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top: 0;
+}
+
+.prev {
+    background-image: url(../dong-a/dong-a-img/main_visual_prev.png);
+    position: absolute;
+    width: 24px;
+    height: 45px;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.prev > img{
+    width: 24px;
+    height: 45px;
+}
+
+.next {
+    background-image: url(../dong-a/dong-a-img/main_visual_next.png);
+    position: absolute;
+    width: 24px;
+    height: 45px;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.next > img{
+    width: 24px;
+    height: 45px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -45px;
+}
+
+.slide-button {
+    width: 10px;
+    height: 10px;
+    background-color: #b9b9b9;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slide-button.active {
+    background-color: var(--sub-color);
+}

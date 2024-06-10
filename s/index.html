@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="makeSlider.css">
 </head>
 <body>
     <header id="header-container">
@@ -77,8 +79,45 @@
                             <button class="line-btn">더보기</button>
                         </div>
                     
-                        <div class="slider-container">
-                            <div class="my-slider"></div>
+                        <div class="my-slide">
+                            <div class="content">
+                                <img src="../dong-a/dong-a-img/corporate-social-responsibility.png" alt="1" class="content-img">
+                                <div class="text-container">
+                                    <h2 class="text-title">‘박카스’ 브랜드 스토리</h2>
+                                    <p class="text-content">한국전쟁을 겪은 후 허약해진 국민들을 위해 1961년 출시된 국민 피로회복제</p>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <img src="../dong-a/dong-a-img/corporate-social-responsibility.png" alt="1" class="content-img">
+                                <div class="text-container">
+                                    <h2 class="text-title">‘셀파렉스’ 브랜드 스토리</h2>
+                                    <p class="text-content">‘비로소 나의 건강 완성! 내 건강을 셀렉하다’<br>
+                                        개인의 건강 타입에 따라 스스로 제품을 간단하게 선택할 수 있는 건강기능식품</p>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <img src="../dong-a/dong-a-img/corporate-social-responsibility.png" alt="1" class="content-img">
+                                <div class="text-container">
+                                    <h2 class="text-title">‘배나치오’ 브랜드 스토리</h2>
+                                    <p class="text-content">‘아픈 배가 낫지요’ 속편한 소화제<br>
+                                        배나치오는 생약성분을 함유한 무탄산 소화제</p>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <img src="../dong-a/dong-a-img/corporate-social-responsibility.png" alt="1" class="content-img">
+                                <div class="text-container">
+                                    <h2 class="text-title">‘검가드’ 브랜드 스토리</h2>
+                                    <p class="text-content">잇몸질환 예방케어 간편 잇몸 관리, 30초씩 검가드와 함께하세요!</p>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <img src="../dong-a/dong-a-img/corporate-social-responsibility.png" alt="1" class="content-img">
+                                <div class="text-container">
+                                    <h2 class="text-title">‘노스카나’ 브랜드 스토리</h2>
+                                    <p class="text-content">그 동안 여드름 흉터로 고민하고 있었다면?<br>
+                                        여드름 흉터엔 바르는게 약! 여드름 흉터 이렇게 치료해요!</p>
+                                </div>
+                            </div>
                         </div>
                 </section>
 
@@ -175,14 +214,14 @@
                                 </a>
                             </div>
                         
-                            <div class="story-container same2">
+                            <div class="story-container same2 diff-size">
                                 <a href="#" class="story-btn-content">
                                     <img src="../dong-a/dong-a-img/story-btn-img1.jpg" alt="약" class="story-btn-img">
                                     <p class="story-btn-text">생활건강/화장품</p>
                                 </a>
                             </div>
                         
-                            <div class="story-container same2">
+                            <div class="story-container same2 diff-size2">
                                 <a href="#" class="story-btn-content">
                                     <img src="../dong-a/dong-a-img/story-btn-img5.jpg" alt="약" class="story-btn-img">
                                     <p class="story-btn-text">제품FAQ/제품소식</p>
@@ -401,5 +440,22 @@
             </div>
 
         </footer>
+
+        <script src="makeSlider.js"></script>
+    <script>
+        makeSlider(document.querySelector('.my-slide'),2,4);
+
+        const basicsHeaderContainer = document.getElementById('header-container')
+
+        window.addEventListener('scroll',()=>{
+            if(window.scrollY>50) {
+                basicsHeaderContainer.classList.add('fix-header');
+            }else{
+                basicsHeaderContainer.classList.remove('fix-header');
+            }
+        })
+        
+        
+    </script>
 </body>
 </html>
