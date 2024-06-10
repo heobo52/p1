@@ -1,6 +1,12 @@
 :root{
     --sub-color: #035a71;
     --main-color:#00a0c9;
+    --sub-white-color:#ffffff;
+    --font-color-black1:#101010;
+    --font-color-black2:#202020;
+    --font-color-black3:#303030;
+    --font-color-black4:#404040;
+    --font-color-black5:#505050;
 }
 
 *{
@@ -19,9 +25,10 @@ button{
 
 a {
     text-decoration: none;
-    color: #222;
+    color:var(--font-color-black2);
     cursor:pointer;
 }
+
 
 #header-container{
     margin: 0 auto;
@@ -98,7 +105,7 @@ section{
     height: 54px;
     font-size: 20px;
     background-color: var(--sub-color);
-    color: white;
+    color: var(--sub-white-color);
     border-radius: 35px;
     text-align: center;
 }
@@ -323,7 +330,7 @@ section{
     position: absolute;
     font-size: 30px;
     font-weight: bold;
-    color: white;
+    color: var(--sub-white-color);
 }
 
 .same2{
@@ -336,6 +343,8 @@ section{
     position: relative;
 
     gap: 80px;
+
+    padding: 0;
 }
 
 .fixed-icon{
@@ -355,8 +364,6 @@ section{
 .m-b-container{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .mall-title-container{
@@ -401,6 +408,8 @@ section{
     justify-content: center;
 }
 
+
+
 .point-main-c{
     font-size: 24px;
     font-weight: bold;
@@ -440,7 +449,7 @@ section{
 
 .mall-btn-link>p{
     font-size: 25px;
-    color: white;
+    color: var(--sub-white-color);
 }
 
 .size-up-text{
@@ -494,11 +503,11 @@ section{
 }
 
 .title-color-diff{
-    color: white;
+    color: var(--sub-white-color);
 }
 
 .c-s-r-content>p{
-    color: white;
+    color: var(--sub-white-color);
     font-weight: bold;
     font-size: 20px;
 }
@@ -509,6 +518,7 @@ section{
 
 .c-s-r-content:hover{
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 #news-notice{
@@ -517,14 +527,16 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    margin-bottom: 0;
 }
+
 
 .n-n-content-container{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 16px;
 }
 
@@ -551,40 +563,31 @@ section{
 
     padding: 16px;
 
-    color: white;
-}
-
-.same-container{
-    max-width: 1280px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    color: var(--sub-white-color);
 }
 
 .container-n-n{
-    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: end;
     gap: 16px;
 }
-
-
+    
+    
 .content-title{
     margin-bottom: 12px;
 }
-
+    
 .content-content{
     font-size: 16px;
     margin-bottom: 16px;
     line-height: 25px;
-
+    
     width: 100%;
     max-height: 50px;
 }
-
+    
 .n-n-date{
     font-size: 16px;
 }
@@ -601,13 +604,14 @@ section{
 .title-m-b{
     margin-bottom: 40px;
 }
+
 .bgi-a{
     width: 100%;
     height: 100%;
     
     position: relative;
 }
-
+    
 .bgi-a::after{
     width: 100%;
     height: 100%;
@@ -616,16 +620,26 @@ section{
     border-radius: 8px;
     top: 0;
     left: 0;
-    
+            
     background-image: url(../dong-a/dong-a-img/news-main-img.png);
     background-size: cover;
-
+                
     filter: brightness(0.3)
 }
 
-.w-btn{
-    border: 2px solid white;
-    color: white;
+                                
+ .w-btn{
+border: 2px solid white;
+color: white;
+}
+                               
+                                    
+.same-container{
+    max-width: 1280px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .w-btn:hover{
@@ -652,4 +666,173 @@ section{
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+
+#footer{
+    margin: 0 auto;
+    padding: 0 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+    background-color: var(--font-color-black5);
+}
+
+#footer>.container{
+    width: 1280px;
+}
+
+.footer-nav-container{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    color: var(--sub-white-color);
+}
+
+.footer-logo-container{
+    margin-bottom: 16px;
+}
+
+.footer-nav-container>.nav-container{
+    min-width: 450px;
+    display: flex;
+    list-style: none;
+    gap: 16px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.company-information{
+    display: flex;
+    gap: 16px;
+
+    font-size: 14px;
+}
+
+.copyright{
+    font-size: 14px;
+}
+
+.sns-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    font-size: 16px;
+
+    color: var(--sub-white-color);
+}
+
+.sns-content-container{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.sns-container{
+    width: 420px;
+    gap: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+.sns-content{
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    background-color: rgb(255, 238, 230);
+    overflow: hidden;
+    }
+    
+#footer>.sns-icon{
+    width: 100%;
+    object-fit: cover;
+}
+
+#footer>.container{
+    position: relative;
+}
+
+.fixed-up-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-btn-container{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 16px;
+
+    font-size: 14px;
+}
+
+.footer-btn-content{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid white;
+    color: white;
+    width: 130px;
+    justify-content: center;
+    padding: 8px;
+}
+
+.fill-diff{
+    fill: white;
+}
+
+.footer-btn-content:hover{
+    background-color: var(--main-color);
+    color: var(--font-color-black1);
+    font-weight: bold;
+}
+
+.fill-diff:hover{
+    fill: #101010;
+}
+
+.btn-content-link{
+    width: 100%;
+    height: 100%;
+}
+
+
+.top-icon{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70px;
+    aspect-ratio: 1;
+    background-color: pink;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    font-size: 16px;
+    font-weight: bold;
+    }
+
+    
+.top-icon::before{
+    content: '';
+    display: block;
+
+    width: 8px;
+    height: 8px;
+
+    border: 1px solid white;
+
+    transform: rotate(225deg);
+
+    border-top: none;
+    border-left: none;
 }
