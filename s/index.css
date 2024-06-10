@@ -868,6 +868,14 @@ color: white;
     }
 }
 
+@media screen and (max-width: 835px) {
+
+    .header-nav-container{
+        display: none;
+    }
+
+}
+
 @media screen and (max-width: 375px) {
 
     .story-container{
