@@ -1,5 +1,5 @@
 function makeSlider(slider,viewCount,gap){
-
+    
     slider.style.position = 'relative';
     slider.style.marginBottom = '56px';
 
@@ -128,6 +128,11 @@ function makeSlider(slider,viewCount,gap){
     }
 
     function 컨텐츠크기반영(){
+        if(window.innerWidth < 1300) {
+            viewCount = 1;
+        }else {
+            viewCount=2
+        }
         contentsWidth = (slider.clientWidth - gap * (viewCount-1)) / viewCount
         
         wrapper.style.gap = `${gap}px`
