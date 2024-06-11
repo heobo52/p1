@@ -40,7 +40,7 @@ a {
     justify-content: space-between;
     align-items: center;
 
-    background-color: var(--sub-white-color);
+    background-color: rgba(255, 255, 255, 0.479);
 
     box-sizing: border-box;
 }
@@ -297,8 +297,13 @@ section{
 
 .story-container{
     position: relative;
-    width: 413px;
-    height: 270px;
+    /* width: 413px;
+    height: 270px; */
+    width: 1280px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
 }
 
 .brand-story-nav-btn{
@@ -309,12 +314,12 @@ section{
 
     gap: 16px;
 
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .story-btn-content{
-    width:100%;
-    height: 100%;
+    flex-basis: 416px;
+    height: 310px;
 
     display: flex;
     align-items: center;
@@ -847,8 +852,20 @@ color: white;
     border-left: none;
 }
 
+/* @media screen and (max-width: 1360px) {
+    
+    .same2{
+        width: 413px;
+    }
 
-@media screen and (max-width: 1350px) {
+    .m-b-content>.btn-content {
+        width: 230px;
+        aspect-ratio: ;
+    }
+        }
+
+
+@media screen and (max-width: 1300px) {
 
     .diff-size{
         width: 413px;
@@ -876,10 +893,18 @@ color: white;
 
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 767px) {
 
     .story-container{
-        width: 170px;
+        width: 300px;
         height: 100px;
     }
 }
+
+@media screen and (max-width: 725px) {
+
+    .story-container{
+        width: 300px;
+        height: 100px;
+    }
+} */
