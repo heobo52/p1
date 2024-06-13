@@ -46,37 +46,52 @@ a {
     display: flex;
     justify-content: center;
     gap: 16px;
+
 }
 
 .content1{
     position: relative;
-    max-width: 450px;
-    background-color: rgba(250, 250, 250, 0.911);
     border-radius: 8px;
+    box-sizing: border-box;
 }
 
-
+.content1:hover > .n-p-img{
+    filter: brightness(0.5);
+    transform: scale(1.1);
+}
+    
+    
+    
 .n-p-img{
+    filter: brightness(1);
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 8px 8px 0 0;
+    transition: 1s;
 }
-
-
+    
+    
 .n-p-text-container{
-    position: absolute;
+    display: none;
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column; */
 
+    position: absolute;
     width: 100%;
     height: 100%;
 
-    top: 50px;
-    left: 50px;
+    top: 0;
+    left: 0;
 
     gap: 8px;
 
     text-align: center;
+    z-index: 2;
 }
+
+
 
 .prodct-content-sub{
     font-size: 20px;
