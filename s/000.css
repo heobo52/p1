@@ -1,0 +1,110 @@
+:root{
+    --sub-color: #035a71;
+    --main-color:#00a0c9;
+    --sub-white-color:#ffffff;
+    --font-color-black1:#101010;
+    --font-color-black2:#202020;
+    --font-color-black3:#303030;
+    --font-color-black4:#404040;
+    --font-color-black5:#505050;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+button{
+    all: unset; 
+}
+
+a {
+    text-decoration: none;
+    color:var(--font-color-black2);
+    cursor:pointer;
+}
+
+#new-product{
+    background-image: url(../dong-a/dong-a-img/new-produt-bgi.jpg);
+
+    display: flex;
+    justify-content: center;
+
+    background-size: cover;
+    object-fit: cover;
+            
+}
+
+.content-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.content1{
+    position: relative;
+    max-width: 450px;
+    background-color: rgba(250, 250, 250, 0.911);
+    border-radius: 8px;
+}
+
+
+.n-p-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+
+.n-p-text-container{
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    top: 50px;
+    left: 50px;
+
+    gap: 8px;
+
+    text-align: center;
+}
+
+.prodct-content-sub{
+    font-size: 20px;
+}
+
+.prodct-content-title{
+    font-size: 26px;
+    font-weight: bold;
+    color: var(--sub-color);
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.prodct-content-substance{
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.cotent2-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.n-p-c-container{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
