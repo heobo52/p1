@@ -116,14 +116,15 @@ button{
 }
 
 .button-container {
-    display: flex;
+    display: none;
+    /* display: flex;
     justify-content: space-between;
     width: 200px;
 
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: -25px;
+    bottom: -25px; */
 }
 
 .slide-button {
