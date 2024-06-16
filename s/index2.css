@@ -49,7 +49,7 @@ a {
     justify-content: space-between;
     align-items: center;
 
-    background-color: rgba(255, 255, 255, 0.479);
+    background-color: white;
 
     box-sizing: border-box;
 }
@@ -90,12 +90,10 @@ section{
 .main-title{
     font-size: 48px;
     font-weight: bold;
-    color: #00abcc;
 }
 
 .sub-title{
     font-size: 30px;
-    color: #00abcc;
     /* margin-bottom: 36px; */
 }
 
@@ -145,29 +143,21 @@ section{
 
 #dong-a-main{
     height: 900px;
-    position: relative;
-    z-index: 1;
-    display: flex;
-}
-
-#dong-a-main::after{
-    width: 100%;
-    height: 100%;
-    content: "";
-
-    opacity: 0.8;
-
-    position: absolute;
-    top: 0;    
-    left: 0;
-    z-index: -1;
-    background-image: url(../dong-a/dong-a-img/main-img2.jpg);
+    background-image: url(../dong-a/dong-a-img/min-img.png);
     background-size: cover;
-    background-position: 30%;
+    background-position: 60%;
+
+    display: flex;
+    align-items: center;
+    justify-self: center;
 }
+
+
 
 
 #dong-a-main>.main-container{
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -176,26 +166,43 @@ section{
     gap: 24px;
 }
 
-.main-container>h2{
+.center-container>h2{
     font-size: 56px;
     font-weight: bold;
 }
 
-.main-container>.p1{
+.center-container>.p1{
     font-size: 30px;
 }
 
-.main-container>.p2{
+.center-container>.p2{
     font-size: 20px;
     line-height: 1.5;
 }
 
+.img-container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.main-product-img{
+    width: 750px;
+    position: absolute;
+    top: 238px;
+    left: 75px;
+}
 
 #representaive-perfomance{
     display: flex;
     justify-content: center;
+    align-items: center;
 
-    background-color: #00abcc;
+    background-image: url(../dong-a/dong-a-img/best-main-img.png);
+    background-size: cover;
+    background-position: 30%;
+
+    min-height: 800px;
 }
 
 
@@ -213,37 +220,64 @@ section{
 #video-product{
     display: flex;
     justify-content: center;
+    align-items: center;
+    min-height: 1200px;
+    background-image: url(../dong-a/dong-a-img/REPR.png);
+    background-size: cover;
+    background-position: 30%;
+
+}
+
+.video-content-cotainer{
+    width: 60%;
+    padding-bottom: 30.25%;
+    position: relative;
+    overflow: hidden;
 }
 
 .video-size{
-    width: 60%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100%;
 }
 
-.video-content-cotainer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    gap: 32px;
-}
 
 .video-content-cotainer{
-    display: flex;
+    border-radius: 8px;
 }
 
-.video-container{
+.video-flex{
     display: flex;
-    flex-direction: column;
     justify-content: center;
 
+    margin-bottom: 50px;
     gap: 32px;
 }
 
 .video-text-container{
     display: flex;
     flex-direction: column;
+    /* align-items: center; */
     justify-content: center;
+    gap: 16px;
+    /* background-color: #00aacc79; */
+
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.video-text-container>h2{
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+.video-text-container>p{
+    font-size: 20px;
+    margin-bottom: 16px;
+
 }
 
 #new-product{
@@ -371,12 +405,18 @@ section{
 }
 
 #brand-story-prodct-info{
-    max-width: 1280px;
+    background-color: white;
+    min-height: 930px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .btn-line{
     display: flex;
-    margin-bottom: 16px;
+    /* margin-bottom: 16px; */
 }
 
 .story-container{
@@ -442,6 +482,9 @@ section{
 }
 
 #mall-btn-container{
+    background-image: url(../dong-a/dong-a-img/XX.png);
+    background-size: cover;
+    background-position: 30%;
     min-height: 800px;
     justify-content: center;
     display: flex;
@@ -460,17 +503,22 @@ section{
     padding: 8px;
 
     border: 2px solid #00abcc;
-    border-radius: 2px;
+    border-radius: 50px;
 
 }
 
 input::placeholder{
     font-size: 16px;
     color: #999999;
+    text-align: center;
 }
 
 input:focus{
     outline:none;
+}
+
+.search-icon:hover{
+    cursor: pointer;
 }
 
 .search-container {
@@ -639,11 +687,13 @@ input:focus{
     width: 100%;
     max-width: 1280px;
     display: flex;
-    gap: 32px;
+    gap: 16px;
 }
 
 .c-s-r-content{
-    width: calc(50% - (16px / 2));
+    width: calc(45% - (16px / 2));
+    max-width: 400px;
+    min-width: 260px;
     aspect-ratio: 1;
     
     transition: 1s;
@@ -788,9 +838,9 @@ input:focus{
 }
 
                                 
- .w-btn{
-border: 2px solid white;
-color: white;
+.w-btn{
+border: 2px solid rgb(43, 43, 43);
+color: rgb(43, 43, 43);
 }
                                
                                     
@@ -802,7 +852,8 @@ color: white;
 
 .w-btn:hover{
     background-color: white;
-    color: var(--sub-color);
+    border: none;
+    color: rgb(43, 43, 43);
     transition: 0.5s;
 }
 
@@ -836,7 +887,7 @@ color: white;
     padding-top: 30px;
     padding-bottom: 30px;
     
-    background-color:  rgba(99, 99, 99, 0.493);
+    background-color:  #00abcc;
 }
 
 #footer>.container{
@@ -899,11 +950,8 @@ color: white;
 }
 
 .sns-content{
-    width: 50px;
+    width: 35px;
     aspect-ratio: 1;
-    border-radius: 100%;
-    background-color: rgb(255, 238, 230);
-    overflow: hidden;
     }
     
 #footer>.sns-icon{
@@ -967,7 +1015,7 @@ color: white;
     right: 0;
     width: 70px;
     aspect-ratio: 1;
-    background-color: pink;
+    background-color: white;
     border-radius: 100%;
     display: flex;
     flex-direction: column;
@@ -977,6 +1025,7 @@ color: white;
 
     font-size: 16px;
     font-weight: bold;
+    color: #00abcc;
     }
 
     
@@ -987,7 +1036,7 @@ color: white;
     width: 8px;
     height: 8px;
 
-    border: 1px solid white;
+    border: 1px solid #00abcc;
 
     transform: rotate(225deg);
 
@@ -1002,7 +1051,7 @@ color: white;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        gap: 32px;
+        gap: 16px;
     
     }
 
@@ -1028,6 +1077,15 @@ color: white;
 }
 
 @media screen and (max-width: 767px) {
+
+    .video-content-cotainer{
+        width: 100%;
+        min-height: 150px;
+    }
+
+    .video-flex{
+        flex-wrap: wrap;
+    }
 
     .main-container>h2{
         font-size: 48px;
