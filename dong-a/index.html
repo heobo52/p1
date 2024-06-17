@@ -3,568 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dong-a</title>
-    <style>
-
-        :root{
-            --sub-color: #035a71;
-            --main-color:#00a0c9;
-        }
-
-        *{
-            margin: 0;
-            padding: 0;
-        }
-
-        img{
-            display: block;
-            width: 100%;
-        }
-
-        button{
-        	all: unset; 
-        }
-
-        a {
-            text-decoration: none;
-            color: #222;
-            cursor:pointer;
-        }
-
-        #header-container{
-            margin: 0 auto;
-            padding: 0 16px;
-
-            width: 100%;
-            height: 80px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-            box-sizing: border-box;
-        }
-
-        .header-container2{
-            display: flex;
-            align-items: center;
-            gap: 40px;
-        }
-
-        .header-nav-contents{
-            min-width: 520px;
-            display: flex;
-            align-items: center;
-            list-style: none;
-
-            gap: 30px;
-        }
-
-        .nav-font-st{
-            font-size: 20px;
-            font-weight: bold;
-        }
-
-        /* ------------헤더 */
-
-        section{
-            padding: 0 32px;
-            margin: 0 auto;
-
-            margin-bottom: 80px;
-        }
-
-        #main-section{
-            background-image: url(./dong-a-img/main-img2.jpg);
-            background-size: cover;
-            background-position: 30%;
-            height: 900px;
-
-            /* margin-bottom: 80px; */
-        }
-
-        .section-w{
-            height: 100%;
-
-            display: flex;
-            align-items: center;
-        }
-        
-        .text-container>h2{
-            font-size: 60px;
-            font-weight: bold;
-            margin-bottom: 12px;
-        }
-
-        .text-container>.p1{
-            font-size: 30px;
-            margin-bottom: 42px;
-        }
-
-        .text-container>.p2{
-            font-size: 20px;
-            line-height: 36px;
-        }
-
-
-        #main-section:hover{
-            color: white;
-        }
-
-
-        /* ---------------------메인1 */
-
-        #representative-performance{
-            height: 990px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        
-        .r-p-container{
-            width: 1280px;
-        }
-
-        .table-of-contentes-container{
-            margin-bottom: 70px;
-        }
-
-
-        /* 공통 관리 목록 ↓ 버튼/목차 */
-
-        .toc-title{
-            font-size: 45px;
-            font-weight: bold;
-            color: var(--sub-color);
-
-            margin-bottom: 15px;
-        }
-
-        .toc-substance{
-            font-size: 30px;
-            color: var(--sub-color);
-            margin-bottom: 35px;
-        }
-
-        .toc-sub-title{
-            font-size: 20px;
-            line-height: 40px;
-            margin-bottom: 35px;
-        }
-
-        .line-btn{
-            cursor:pointer;
-            width: 200px;
-            height: 45px;
-            font-size: 20px;
-            background-color: none;
-            border: 2px solid #035a71 ;
-            border-radius: 25px;
-            text-align: center;
-
-            margin-bottom: 50px;
-        }
-
-        .btn-line{
-            display: flex;
-            justify-content: flex-end;
-        }
-
-        .green-btn{
-            cursor:pointer;
-            width: 200px;
-            height: 54px;
-            font-size: 20px;
-            background-color: var(--sub-color);
-            color: white;
-            border-radius: 35px;
-            text-align: center;
-        }
-
-        .line-btn:hover{
-            background-color: var(--sub-color);
-            color: white;
-        }
-
-        .green-btn:hover{
-            background-color: white;
-            font-weight: bold;
-            border: 2px solid #035a71 ;
-            color: var(--sub-color);
-            box-sizing: border-box;
-        }
-
-        /* ---------------------------메인2 */
-
-        #new-product{          
-            background-image: url(./dong-a-img/new-produt-bgi.jpg);
-            background-position: 45%;
-            
-            display: flex;
-            justify-content: center;
-        }
-        
-        .w-h-container{
-            width: 1280px;
-            
-            /* display: flex;
-            flex-direction: column;
-            justify-content: center; */
-        }
-        
-        .product-content{
-            width: 524px;
-            height: 616px;
-            background-color: white;
-            border-radius: 8px;
-        }
-        
-        .differnt-c{
-            width: 740px;
-            top: 100px;
-        }
-        
-        .differnt-t{
-            margin-top: 300px;
-        }
-        
-        .new-product-container{
-            display: flex;
-            gap: 16px;
-        }
-
-        .product-text-container{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .product-main-img{
-            width: 100%;
-            height: 420px;
-            border-radius: 8px 8px 0px 0px;
-
-            object-fit: cover;
-
-            margin-bottom: 20px;
-        }
-
-        .prodct-content-sub{
-            font-size: 20px;
-
-            margin-bottom: 8px;
-        }
-
-        .prodct-content-title{
-            font-size: 30px;
-            font-weight: bold;
-            color: var(--sub-color);
-            text-align: center;
-
-            margin-bottom: 12px;
-        }
-
-        .prodct-content-substance{
-            font-size: 20px;
-        }
-
-        .npc-container{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-            gap: 50px;
-        }
-
-        /* ----------------- */
-
-        #brand-story-info{
-            width: 1280px;
-        }
-
-        .brand-story-contents{
-            display: flex;
-            flex-direction: column;
-
-            gap: 12px;
-        }
-
-        .story-container{
-            position: relative;
-            width: 413px;
-            height: 270px;
-        }
-
-        .brand-story-nav-btn{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            gap: 16px;
-
-            flex-wrap: wrap;
-        }
-
-        .story-btn-content{
-            width: 100%;
-            height: 100%;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-
-            border-radius: 8px;
-        }
-
-        .story-btn-content:hover > img {
-            filter: brightness(0.5);
-            transform: scale(1.1);
-        }
-        
-        .story-btn-img{
-            height: 100%;
-            object-fit: cover;
-            
-            transition: 0.2s;
-        }
-
-        .story-btn-text{
-            position: absolute;
-            font-size: 30px;
-            font-weight: bold;
-            color: white;
-        }
-
-        .same2{
-            width: 632px;
-        }
-
-        /* ----------------------------- */
-
-        #mall-btn-container{
-            display: flex;
-            flex-direction: column;
-
-            gap: 80px;
-        }
-
-        /* .dong-a-logo-img{
-            width: 248px;
-            height: 191px;
-            left: 0;
-        } */
-
-        .m-b-container{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .mall-title-container{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-            text-align: center;
-
-            gap: 20px;
-        }
-
-        .differnt-fontsize{
-            font-size: 45px;
-            font-weight: bold;
-            color: var(--main-color);
-        }
- 
-        .mall-title-container>p{
-            font-size: 20px;
-            line-height: 30px;
-        }
-
-        .m-b-content-container{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-            gap: 40px;
-        }
-
-        .point-btn{
-            width: 414px;
-            height: 63px;
-
-            font-size: 30px;
-            border: 2px solid var(--main-color);
-            border-radius: 35px;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .point-main-c{
-            font-size: 24px;
-            font-weight: bold;
-            color: var(--main-color);
-        }
-
-        .m-b-content{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            flex-wrap: wrap;
-
-            gap: 16px;
-        }
-
-        .btn-content{
-            width: 416px;
-            height: 318px;
-
-            background-color: var(--main-color);
-
-            border-radius: 8px;
-        }
-
-        .mall-btn-link{
-            width: 100%;
-            height: 100%;
-
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-
-            gap: 25px;
-        }
-
-        .mall-btn-link>p{
-            font-size: 25px;
-            color: white;
-        }
-
-        .size-up-text{
-            font-size: 35px;
-            font-weight: bold;
-        }
-
-        /* ----------------------------- */
-
-        #corporate-social-responsibility{
-            height: 100%;
-            background-image: url(./dong-a-img/corporate-social-responsibility.png);
-            background-size: cover;
-            object-fit: cover;
-
-        }
-        /* 공용속성 */
-
-        .point-c-w{
-            color: white;
-        }
-
-        .point-l-w{
-            color: white;
-            border: 2px solid white ;
-        }
-
-        /*  */
-
-        .c-s-r-container{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            flex-wrap: wrap;
-
-            gap: 50px;
-        }
-
-        .c-s-r-content{
-            width: 308px;
-            aspect-ratio: 1;
-
-            border-radius: 100%;
-
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-
-            background-color:rgba(0, 160, 201, 0.6);
-
-            font-size: 20px;
-            color: white;
-            font-weight: bold;
-
-        }
-
-        .c-s-r-content>a{
-            text-align: center;
-            font-size: 20px;
-            color: white;
-            font-weight: bold;
-        }
-
-        .c-s-r-text{
-            font-size: 30px;
-            margin-bottom: 15px;
-        }
-
-        .c-s-r-content:hover{
-            transform: scale(1.2);
-        }
-
-        #news-notice{
-            background-color: var(--sub-color);
-            height: 100%;
-        }
-
-        .n-n-content-container{
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            flex-wrap: wrap;
-
-            gap: 16px;
-        
-        }
-
-        .news-content-container{
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-
-            gap: 20px;
-        }
-
-
-        .news-content{
-            background-image: url(./dong-a-img/news-main-img.png);
-            background-size: cover;
-            object-fit: cover;
-
-            filter: brightness(0.4);
-            width: 632px;
-            height: 308px;
-            border-radius: 8px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center
-        }
-'
-
-
-    
-    </style>
-</head> 
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="makeSlider.css">
+</head>
 <body>
     <header id="header-container">
         <div class="header-container2">
-            <div class="logo-container">
+            <h1 class="logo-container">
                 <a href="#"><svg width="158" height="28" viewBox="0 0 158 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g opacity="0.7" clip-path="url(#clip0_116_613)">
                     <path d="M90.3555 3.15991V25.3148H94.0307V13.0719H97.8413V10.415H94.0307V3.15991H90.3555Z" fill="#221E1F"/>
@@ -578,12 +25,12 @@
                     <path d="M131.949 19.7743H150.546V25.3077H154.222V17.5567H131.949V19.7743Z" fill="#221E1F"/>
                     <path d="M107.799 17.5921C109.366 19.668 111.71 21.2692 113.939 22.4028L115.143 20.3127C112.628 18.8674 110.912 16.8907 109.836 14.418C110.769 12.4767 111.268 10.3795 111.268 8.26821V5.54048C111.268 4.47064 110.399 3.59918 109.323 3.59918H101.246V5.81679H107.479V8.26821C107.479 13.5749 104.687 18.7115 99.8789 20.6387L100.89 22.4383C103.739 21.3613 106.076 19.6538 107.799 17.585V17.5921Z" fill="#221E1F"/>
                     <path d="M10.3905 27.7945C10.3905 27.7945 10.4973 22.4241 9.7993 20.4261C9.08704 18.4281 8.30356 15.2045 3.05422 11.8462C1.22372 10.67 0.618301 10.7763 0.433114 10.8826C0.240805 10.9889 -0.0440983 11.4777 0.00575966 13.6387C0.0627402 15.8067 -0.101079 21.751 2.45592 24.3725C5.01293 26.9939 6.993 27.6174 10.3905 27.7945Z" fill="#00ACCC"/>
-                    <path d="M14.5344 13.6245C18.6441 7.085 24.8265 4.78237 25.5031 4.57691C26.0872 4.40687 26.3792 4.21557 26.4291 3.73379C26.486 3.27326 25.731 2.28136 23.5515 1.25403C20.5743 -0.155887 14.5344 -1.65317e-05 14.5344 -1.65317e-05C14.5344 -1.65317e-05 8.50154 -0.155887 5.52431 1.25403C3.3448 2.28136 2.58269 3.27326 2.63967 3.73379C2.69665 4.21557 2.97443 4.39978 3.5656 4.57691C4.23512 4.78237 10.4318 7.085 14.5344 13.6245Z" fill="#00ACCC"/>
+                    <path d="M14.5344 13.6245C18.6441 7.085 24.8265 4.78237 25.5031 4.57691C26.0872 4.40687 26.3792 4.21557 26.4291 3.73379C26.486 3.27326 25.731 2.28136 23.5515 1.25403C20.5743 -0.155887 14.5344 -1.65319e-05 14.5344 -1.65319e-05C14.5344 -1.65319e-05 8.50154 -0.155887 5.52431 1.25403C3.3448 2.28136 2.58269 3.27326 2.63967 3.73379C2.69665 4.21557 2.97443 4.39978 3.5656 4.57691C4.23512 4.78237 10.4318 7.085 14.5344 13.6245Z" fill="#00ACCC"/>
                     <path d="M14.5361 28C15.6187 28 16.6087 27.9504 17.5204 27.8937C17.5204 27.8937 17.6273 23.0617 17.3281 21.2692C17.0005 19.2712 16.3096 16.1184 14.5361 13.6812C12.7768 16.1113 12.0788 19.2712 11.7511 21.2692C11.4591 23.0617 11.5659 27.8937 11.5659 27.8937C12.4705 27.9575 13.4677 28 14.5361 28Z" fill="#00ACCC"/>
                     <path d="M18.6816 27.7945C18.6816 27.7945 18.5747 22.4241 19.2799 20.4261C19.9921 18.4281 20.7827 15.2045 26.0249 11.8462C27.8554 10.67 28.4609 10.7763 28.646 10.8826C28.8383 10.9889 29.1233 11.4777 29.0663 13.6387C29.0164 15.8067 29.1802 21.751 26.6232 24.3725C24.0662 26.9939 22.0861 27.6174 18.6816 27.7945Z" fill="#00ACCC"/>
                     <path d="M1.81498 6.18521C1.4446 6.11436 1.19531 5.74594 1.19531 5.34918C1.19531 4.8674 1.58705 4.47772 2.06427 4.47772C2.14261 4.47772 2.29931 4.49898 2.41327 4.55566C2.41327 4.55566 6.35205 6.334 8.83783 9.58602L8.77373 9.68521C5.45461 7.09918 1.81498 6.18521 1.81498 6.18521Z" fill="#00ACCC"/>
-                    <path d="M0.932328 8.19737C0.561954 8.10526 0.284174 7.77935 0.269929 7.38259C0.255684 6.90081 0.626057 6.47571 1.11039 6.47571C1.22435 6.47571 1.38105 6.50405 1.50213 6.55364C1.50213 6.55364 5.46941 8.15486 7.95518 11.1731L7.88396 11.2581C4.41526 8.81376 0.932328 8.19737 0.932328 8.19737Z" fill="#00ACCC"/>
-                    <path d="M0.759115 10.3866C0.395864 10.3016 0.132329 9.98275 0.118084 9.60725C0.096716 9.13963 0.459967 8.72162 0.937179 8.72162C0.96567 8.72162 1.12237 8.72162 1.27194 8.7783C1.27194 8.7783 5.09676 10.3299 7.09108 12.7317L7.02698 12.838C3.70074 10.7267 0.759115 10.3937 0.759115 10.3937V10.3866Z" fill="#00ACCC"/>
+                    <path d="M0.932328 8.19737C0.561954 8.10526 0.284174 7.77935 0.269929 7.38259C0.255684 6.90081 0.626057 6.47571 1.11039 6.47571C1.22435 6.47571 1.38105 6.50405 1.50213 6.55364C1.50213 6.55364 5.46941 8.15486 7.95518 11.1731L7.88396 11.2581C4.41527 8.81376 0.932328 8.19737 0.932328 8.19737Z" fill="#00ACCC"/>
+                    <path d="M0.759115 10.3866C0.395864 10.3016 0.132329 9.98275 0.118084 9.60725C0.096716 9.13963 0.459967 8.72162 0.93718 8.72162C0.96567 8.72162 1.12237 8.72162 1.27194 8.7783C1.27194 8.7783 5.09676 10.3299 7.09108 12.7317L7.02698 12.838C3.70074 10.7267 0.759115 10.3937 0.759115 10.3937V10.3866Z" fill="#00ACCC"/>
                     <path d="M27.2565 6.18521C27.634 6.11436 27.8833 5.74594 27.8833 5.34918C27.8833 4.8674 27.4845 4.47772 27.0001 4.47772C26.9289 4.47772 26.7722 4.49898 26.6511 4.55566C26.6511 4.55566 22.7052 6.334 20.2266 9.58602L20.2907 9.68521C23.6169 7.09918 27.2494 6.18521 27.2494 6.18521H27.2565Z" fill="#00ACCC"/>
                     <path d="M28.1465 8.19737C28.5097 8.10526 28.7875 7.77935 28.8018 7.38259C28.8231 6.90081 28.4385 6.47571 27.9613 6.47571C27.8544 6.47571 27.6906 6.50405 27.5695 6.55364C27.5695 6.55364 23.6023 8.15486 21.1094 11.1731L21.1806 11.2581C24.6493 8.81376 28.1394 8.19028 28.1394 8.19028L28.1465 8.19737Z" fill="#00ACCC"/>
                     <path d="M28.3117 10.3866C28.6679 10.3016 28.9385 9.98275 28.9457 9.60725C28.9741 9.13963 28.6109 8.72162 28.1408 8.72162C28.0981 8.72162 27.9485 8.72162 27.7989 8.7783C27.7989 8.7783 23.967 10.3299 21.9727 12.7317L22.0368 12.838C25.3488 10.7267 28.3046 10.3937 28.3046 10.3937L28.3117 10.3866Z" fill="#00ACCC"/>
@@ -594,8 +41,9 @@
                     </clipPath>
                     </defs>
                     </svg>
+                    
                     </a>
-            </div>
+                </h1>
             <nav class="header-nav-container">
                 <ul class="header-nav-contents">
                     <a href="#"><li class="nav-font-st">기업소개</li></a>
@@ -614,263 +62,332 @@
         </header>
 
         <main>
-            <section id="main-section">
-                <div class="section-w">
-                    <div class="text-container">
-                        <h2>Global Healthcare Player</h2>
-                        <p class="p1">인류의 건강과 행복을 위한 끝없는 도전</p>
-                        <p class="p2">도전이 있기에 변화가 있고, 변화가 있기에 내일의 발전이 있을 수  있음을 믿습니다.<br>
-                            변화하지 않는 단 하나의 가치 '건강과 행복'을 위해<br>
-                            동국제약은 고객님의 소중한 의견을 귀담아 듣고 일상을 건강하고 행복하게 만드는 일에 집중하겠습니다. </p>
+                <section id="dong-a-main">
+                        <div class="main-container">
+                            <div class="content2-container">
+                                <p class="p1">인류 건강과 행복을 위한 끝없는 도전</p>
+                                <h2>Global<br>Healthcare<br>Player</h2>
+                                <p class="p2">도전이 있기에 변화가 있고,<br>변화가 있기에 내일의 발전이 있을 수  있음을 믿습니다.<br>
+                                    변화하지 않는 단 하나의 가치 건강과 행복을 위해<br>
+                                    동국제약은 고객님의 소중한 의견을 귀담아 듣고<br>일상을 건강하고 행복하게 만드는 일에 집중하겠습니다. </p>
+                                <button class="line-btn w-btn">ABOUT MORE</button>
+                            </div>
+                            <div class="img-container">
+                                <img src="dong-a-img/dong-a-main-icon.png" alt="1" class="main-product-img">
+                            </div>
+                        </div>
+                </section>
+
+                <section id="New-Product">
+                    <div class="same-container">
+                        <div class="fixed-text-container">
+                            <h2 class="main-title">New Product</h2>
+                            <p class="sub-title">신제품</p>
+                        </div>
+                    
+                        <div class="my-slide">
+                            <a href="#" class="content">
+                                <img src="dong-a-img/best-img-락토바이브 오랄 솔루션.png" alt="락토바이브 오랄 솔루션" class="content-img">
+                            </a>
+
+                            <a href="#" class="content">
+                                <img src="dong-a-img/best-img-락토바이브 지노솔루션.png" alt="락토바이브 지노솔루션" class="content-img">
+                            </a>
+
+                            <a href="#" class="content">
+                                <img src="dong-a-img/best-img-판텍Q목감기.png" alt="판텍Q목감기" class="content-img">
+                            </a>
+
+                            <a href="#" class="content">
+                                <img src="dong-a-img/best-img-판텍Q코감기.png" alt="판텍Q코감기" class="content-img">
+                            </a>
+
+                            <a href="#" class="content">
+                                <img src="dong-a-img/best-img-락토바이브 패밀리.png" alt="락토바이브 패밀리" class="content-img">
+                            </a>
+
+                            <a href="#" class="content">
+                                <img src="dong-a-img/best-img-락토바이브프로.png" alt="락토바이브프로" class="content-img">
+                            </a>
+
+                        </div>
                     </div>
-                 </div>
+                </section>
+
+                <section id="video-product">
+                    <div class="same-container">
+
+                        <div class="fixed-text-container">
+                            <h2 class="main-title">Representaive Perfomance</h2>
+                            <p class="sub-title">대표성과</p>
+                        </div>
+
+                        <div class="video-container">
+                            <div class="video-flex">
+                                <div class="video-content-cotainer">
+                                        <iframe class="video-size" src="https://www.youtube.com/embed/z16Hc4nkvco" title="[베나치오] 우리 아이 소화에 속전속결, 베나치오 키즈 (6&#39;)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                                <div class="video-text-container">
+                                    <h2>베나치오 키즈</h2>
+                                    <p>배 아플때도 빠르게, 우리아이 소화에 속전속결!</p>
+                                    <button class="line-btn">더보기</button>
+                                </div>
+
+                            </div>
+    
+                            <div class="video-flex">
+                                <div class="video-content-cotainer">
+                                    <iframe class="video-size" src="https://www.youtube.com/embed/41wUx4LpMTo" title="여드름 흉터치료 빠를수록, 바를수록 노스카나" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                                <div class="video-text-container">
+                                    <h2>노스카나</h2>
+                                    <p>여드름 흉터 더 짙어지기 전에 치료는 빠를수록!</p>
+                                    <button class="line-btn">더보기</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="mall-btn-container">
+                    <div class="m-b-container">
+                         <div class="mall-title-container">
+                            <h2 class="differnt-fontsize diff-off">Just to make you happy smile:<br> That's the our motive</h2>
+                            <h2 class="differnt-fontsize diff-on">Just to make you<br>happy smile:<br> That's the our motive</h2>
+                            <p class="diff-off">안락한 공간에서 가족의 사랑과 일상의 행복감,<br>진심 어린 동국제약의 제품으로<br>당신의 삶이 특별하다고 느껴지도록 소소하지만 공감가는 행복한 이야기를 나누고자 합니다.</p>
+                            <p class="diff-on">안락한 공간에서 가족의 사랑과 일상의 행복감,<br>진심 어린 동국제약의 제품으로<br>당신의 삶이 특별하다고 느껴지도록 소소하지만<br>공감가는 행복한 이야기를 나누고자 합니다.</p>
+                            <p class="diff-size-color">오늘의 건강함과 행복한 이야기를 담아가세요</p>
+                            <div class="search-container">
+                                <input type="search" placeholder="원하는 제품을 검색해 보세요!">
+                                <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" focusable="false" viewBox="0 0 12 12" class="search-iconb" aria-hidden="true">
+                                    <circle cx="4.5" cy="4.5" r="4" fill="none" stroke="currentColor"></circle>
+                                    <path stroke="currentColor" stroke-linecap="round" d="M11 11L7.5 7.5"></path>
+                                  </svg>
+                            </div>
+                        </div>
+                    </div> 
+ 
+                    <div class="m-b-content-container">
+                        <p class="point-main-c">동국제약 공식 브랜드몰</p>
+                        <div class="m-b-content">
+                            <div class="btn-content">
+                                <a href="#" class="mall-btn-link">
+                                    <p>공식 브랜드몰</p>
+                                    <p class="size-up-text">:Dmall</p>
+                                </a>
+                            </div>
+
+                            <div class="btn-content">
+                                <a href="#" class="mall-btn-link">
+                                    <p>일반의약품</p>
+                                    <p class="size-up-text">:Dpharm</p>
+                                </a>
+                            </div>
+
+                            <div class="btn-content">
+                                <a href="#" class="mall-btn-link">
+                                    <p>더마 코스메틱</p>
+                                    <p class="size-up-text">FATION</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
             </section>
 
-            <section id="representative-performance">
-                <div class="r-p-container">
-                    <div class="table-of-contentes-container">
-                        <h2 class="toc-title">Representative Performance</h2>
-                        <p class="toc-substance">대표 성과</p>
-                        <button class="line-btn">더보기</button>
-                    </div>
-                </div>
-    
-                    <div class="my-slide">
-                        <div class="content"><img src="" alt="1"></div>
-                        <div class="content"><img src="" alt="2"></div>
-                        <div class="content"><img src="" alt="3"></div>
-                        <div class="content"><img src="" alt="4"></div>
-                        <div class="content"><img src="" alt="5"></div>
-                    </div>
-            </section>
-
-            <section id="new-product">
-                <div class="w-h-container">
-                    <div class="table-of-contentes-container">
-                        <h2 class="toc-title">New Product</h2>
-                        <p class="toc-substance">신제품</p>
-                    </div>
-    
-                    <div class="npc-container">
-                    <div class="new-product-container">
-                        <div class="product-content">
-                            <img src="./dong-a-img/product-img1.jpg" alt="멜라토닝크림img" class="product-main-img">
-                            <div class="product-text-container">
-                                <p class="prodct-content-sub">#색소침착치료제</p>
-                                <h3 class="prodct-content-title">멜라토닝 크림</h3>
-                                <p class="prodct-content-substance">멜라닌 색소 생성을 억제하여 과다 침착된 멜라닌을</p>
-                                <p class="prodct-content-substance">점진적으로 표백하여 작용으로 색소를 치료</p>
-                            </div>
+                <section id="brand-story-prodct-info">
+                        <div class="fixed-text-container diff-color">
+                            <h2 class="main-title">Brand Story & Prodct Info</h2>
+                            <p class="sub-title">브랜드 스토리 & 제품정보</p>
+                            <p class="sub-content diff-off">동아제약의 창업 정신인<br>“좋은 의약품을 생산해 국민 건강에 이바지한다”는 가장 소중하게 지켜온 가치이자 신념입니다.</p>
+                            <p class="sub-content diff-on">동아제약의 창업 정신인<br>“좋은 의약품을 생산해 국민 건강에 이바지한다”<br>가장 소중하게 지켜온 가치이자 신념입니다.</p>
                         </div>
-                        
-                        <div class="product-content differnt-c differnt-t">
-                            <img src="./dong-a-img/product-img2.jpg" alt="트러블세럼img" class="product-main-img differnt-c">
-                            <div class="product-text-container">
-                                <p class="prodct-content-sub">#트러블해방세럼</p>
-                                <h3 class="prodct-content-title">파티온 노스카나 트러블 세럼</h3>
-                                <p class="prodct-content-substance">10배 더 강력한 트러블 진정 노스타나인 세럼</p>
-                                <p class="prodct-content-substance">9년간 연구한 동아제약 특허 진정 성분 46% 첨가</p>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="new-product-container">
-                        <div class="product-content differnt-c">
-                            <img src="./dong-a-img/product-img3.png" alt="트러블세럼img" class="product-main-img differnt-c">
-                            <div class="product-text-container">
-                                <p class="prodct-content-sub">#비타민C</p>
-                                <h3 class="prodct-content-title">비타그란</h3>
-                                <p class="prodct-content-substance">현대인의 필수 영양소 비타민C를 분말,정제,</p>
-                                <p class="prodct-content-substance">츄어블 속에 꼭꼭 담아 언제 어디서든 간편하게 제공</p>
-                            </div>
-                        </div>
-    
-                        <div class="product-content differnt-t">
-                            <img src="./dong-a-img/product-img4.png" alt="멜라토닝크림img" class="product-main-img">
-                            <div class="product-text-container">
-                                <p class="prodct-content-sub">#혈행개선</p>
-                                <h3 class="prodct-content-title">써큐란 알파</h3>
-                                <p class="prodct-content-substance">혈행 및 기억력 개선에 도움을 줄 수 있으며,</p>
-                                <p class="prodct-content-substance">고령화 사회에 접어든 현대인의 건강 고민 해결!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="brand-story-info">
-                <div class="r-p-container">
-                    <div class="table-of-contentes-container">
-                        <h2 class="toc-title">Brand Story & Prodct Info</h2>
-                        <p class="toc-substance">브랜드 스토리 & 제품정보</p>
-                        <p class="toc-sub-title">동아제약의 창업 정신인<br>“좋은 의약품을 생산해 국민 건강에 이바지한다”는 가장 소중하게 지켜온 가치이자 신념입니다.</p>
-                    </div>
-
-                    <div class="brand-story-contents">
-                        <div class="btn-line">
-                            <button class="green-btn">판매약국 찾기</button>
-                        </div>
-
+                            
                         <div class="brand-story-nav-btn">
                             <div class="story-container">
                                 <a href="#" class="story-btn-content">
-                                    <img src="./dong-a-img/story-btn-img1.jpg" alt="약" class="story-btn-img">
+                                    <img src="dong-a-img/story-btn-img1.png" alt="일반 의약품" class="story-btn-img">
                                     <p class="story-btn-text">일반 의약품</p>
                                 </a>
-                            </div>
-
-                            <div class="story-container">
                                 <a href="#" class="story-btn-content">
-                                    <img src="./dong-a-img/story-btn-img2.jpg" alt="약" class="story-btn-img">
+                                    <img src="dong-a-img/story-btn-img2.png" alt="의약외품" class="story-btn-img">
                                     <p class="story-btn-text">의약외품</p>
                                 </a>
-                            </div>
-
-                            <div class="story-container">
                                 <a href="#" class="story-btn-content">
-                                    <img src="./dong-a-img/story-btn-img3.jpg" alt="약" class="story-btn-img">
+                                    <img src="dong-a-img/story-btn-img3.png" alt="건강기능식품" class="story-btn-img">
                                     <p class="story-btn-text">건강기능식품</p>
                                 </a>
-                            </div>
-
-                            <div class="story-container same2">
                                 <a href="#" class="story-btn-content">
-                                    <img src="./dong-a-img/story-btn-img1.jpg" alt="약" class="story-btn-img">
-                                    <p class="story-btn-text">생활건강/화장품</p>
+                                    <img src="dong-a-img/story-btn-img4.png" alt="생활건강 / 화장품" class="story-btn-img">
+                                    <p class="story-btn-text">생활건강 / 화장품</p>
+                                </a>
+                                <a href="#" class="story-btn-content diff-size-up">
+                                    <img src="dong-a-img/story-btn-img5.png" alt="제품FAQ / 제품소식" class="story-btn-img">
+                                    <p class="story-btn-text">제품FAQ / 제품소식</p>
                                 </a>
                             </div>
-
-                            <div class="story-container same2">
-                                <a href="#" class="story-btn-content">
-                                    <img src="./dong-a-img/story-btn-img5.jpg" alt="약" class="story-btn-img">
-                                    <p class="story-btn-text">제품FAQ/제품소식</p>
-                                </a>
-                            </div>
-
                         </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="mall-btn-container">
-                <div class="m-b-container">
-    
-                     <div class="mall-title-container">
-                        <h2 class="differnt-fontsize">Just to make you happy smile: That's the our motive</h2>
-                        <p>안락한 공간에서 가족의 사랑과 일상의 행복을 마주하며 하나의 공간에서 다양한 브랜드를 알아가며<br>
-                            즐겁게 쇼핑하고 진심 어린 제품으로 당신의 삶이 특별하다고 느껴지도록<br>
-                            소소하지만 공감가는 행복한 이야기를 나누고자 합니다</p>
-                        <p>오늘의 건강함과 행복한 이야기를 담아가세요</p>
-                     </div>
-                </div> 
-
-                <div class="m-b-content-container">
-                    <p class="point-btn">원하는 제품 한 눈에 찾기</p>
-                    <p class="point-main-c">동국제약 공식 브랜드몰</p>
-                    <div class="m-b-content">
-                        <div class="btn-content">
-                            <a href="#" class="mall-btn-link">
-                                <p>공식 브랜드몰</p>
-                                <p class="size-up-text">:Dmall</p>
-                            </a>
-                        </div>
-
-                        <div class="btn-content">
-                            <a href="#" class="mall-btn-link">
-                                <p>일반의약품 공식 브랜드몰</p>
-                                <p class="size-up-text">:Dpharm</p>
-                            </a>
-                        </div>
-
-                        <div class="btn-content">
-                            <a href="#" class="mall-btn-link">
-                                <p>더마 코스메틱 공식 브랜드몰</p>
-                                <p class="size-up-text">FATION</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
             </section>
 
             <section id="corporate-social-responsibility">
-                <div class="r-p-container">
-                    <div class="table-of-contentes-container">
-                        <h2 class="toc-title point-c-w">Corporate Social Responsibility</h2>
-                        <p class="toc-substance point-c-w">기업의 사회적 책임</p>
-                        <p class="toc-sub-title point-c-w">동아제약은 ‘함께성장’의 사회공헌 철학을 바탕으로<br>
-                            기업으로서 사회적 책임을 다하고자 노력하고 있습니다.</p>
-                        <button class="line-btn point-l-w">바로가기</button>
+                <div class="same-container">
+                    <div class="sort-gap">
+                        <div class="fixed-text-container">
+                            <h2 class="main-title">Corporate Social Responsibility</h2>
+                            <p class="sub-title">기업의 사회적 책임</p>
+                            <p class="sub-content diff-off">동아제약은 ‘함께성장’의 사회공헌 철학을 바탕으로 기업으로서 사회적 책임을 다하고자 노력하고 있습니다.</p>
+                            <p class="sub-content diff-on">동아제약은 ‘함께성장’의 사회공헌 철학을<br>바탕으로 기업으로서 사회적 책임을 다하고자<br>노력하고 있습니다.</p>
+                        </div>
+                    
+                        <div class="c-s-r-content-container">
+                            <div class="c-s-r-content">
+                                <p class="diff-font-size">건강</p>
+                                <p>국민과 사회의 건강증진</p>
+                            </div>
+                        
+                            <div class="c-s-r-content">
+                                <p class="diff-font-size">사회</p>
+                                <p>사회구성원 모두의 행복한 삶</p>
+                            </div>
+                        
+                            <div class="c-s-r-content">
+                                <p class="diff-font-size">환경</p>
+                                <p>미래 세대를 위한 깨끗한 환경</p>
+                            </div>
+                        
+                            <div class="c-s-r-content">
+                                <p class="diff-font-size">사람</p>
+                                <p>사회에 기여하는 인재육성</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                    
-                    <div class="c-s-r-container">
-                        <div class="c-s-r-content ">
-                            <a href="#">
-                                <p class="c-s-r-text">건강</p>
-                                <p>국민과 사회의 건강증진</p>
-                            </a>
-                        </div>
-                        
-                        <div class="c-s-r-content">
-                            <a href="#">
-                                <p class="c-s-r-text">사회</p>
-                                <p>사회구성원 모두의 행복한 삶</p>
-                            </a>
-                        </div>
-                        
-                        <div class="c-s-r-content">
-                            <a href="#">
-                                <p class="c-s-r-text">환경</p>
-                                <p>미래 세대를 위한 깨끗한 환경</p>
-                            </a>
-                        </div>
-                        
-                        <div class="c-s-r-content">
-                            <a href="#">
-                                <p class="c-s-r-text">사람</p>
-                                <p>사회에 기여하는 인재육성</p>
-                            </a>
-                        </div>
-                    </div>
             </section>
 
             <section id="news-notice">
-                <div class="r-p-container">
-                    <div class="table-of-contentes-container">
-                        <h2 class="toc-title point-c-w">News & Notice</h2>
-                        <p class="toc-substance point-c-w">뉴스 & 공지사항</p>
-                        <p class="toc-sub-title point-c-w">동아제약의 새로운 소식 및 다양한 뉴스를 확인하세요.</p>
+                <div class="same-container">
+                    <div class="fixed-text-container diff-color">
+                        <h2 class="main-title">News & Notice</h2>
+                        <p class="sub-title">뉴스 & 공지사항</p>
                     </div>
-                    
-                    <div class="n-n-content-container">
-                        <div class="news-content-container">
-                            <div class="news-content">
-                                <p class="news-top">news</p>
-                                <div class="n-n-text-container">
-                                    <h3 class="n-n-title">동아제약, '유기동물 보호' 임직원 봉사…"입양문화 확산"</h3>
-                                    <p class="n-n-content-text">제약기업 동아제약이 지난 16일 동대문구에 위치한 유기동물 입양센터 발라당에서 유기동물보호 봉사활동을 진행했다.<br>
-                                        19일 동아제약에 따르면 이번 봉사활동은 지난 달 '동물과 함께 행복한 세상(동행)'과 유기동물 보호 및 입양 활성화를 위한 업무협약의 일환으로 진행됐다.</p>
-                                    <p class="n-n-date">2024-05-19</p>
+
+                        <div class="n-n-content-container">
+                            <a href="#" class="container-n-n">
+                                    <div class="n-n-content bgi-a">
+                                        <div class="n-n-text-container">
+                                            <p class="n-n-title title-m-b">News</p>
+                                            <p class="n-n-title text-title-line">동아제약, '유기동물 보호' 임직원 봉사…"입양문화 확산"</p>
+                                            <p class="content-content text-line">제약기업 동아제약이 지난 16일 동대문구에 위치한 유기동물 입양센터 발라당에서 유기동물보호 봉사활동을 진행했다.<br>
+                                                19일 동아제약에 따르면 이번 봉사활동은 지난 달 '동물과 함께 행복한 세상(동행)'과 유기동물 보호 및 입양 활성화를 위한 업무협약의 일환으로 진행됐다.</p>
+                                            <p class="n-n-date">2024-05-09</p>
+                                        </div>
+                                    </div>
+                                    <button class="line-btn n-n-btn">더보기</button>
+                            </a>
+
+                            <a href="#" class="container-n-n">
+                                <div class="n-n-content">
+                                    <div class="n-n-text-container">
+                                        <p class="n-n-title title-m-b">Notice</p>
+                                        <p class="n-n-title text-title-line">챔프 시럽 온라인 환불 접수 안내</p>
+                                        <p class="content-content text-line">당사는 현재 약국 등을 통해 회수 및 교품, 환불처리를 진행하고 있으며, 약국 방문이 어려우신 고객님들을 위해 온라인을 통해서도 홰당 제품을 회수,<br> 확인 후 환불 처리를 병행하고 있습니다.아래의 URL로 접속하시어 접수하여 주시면 신속하게 환불해 드리도록 하겠습니다.소비자 여러분께 불편을 드려 죄송합니다.</p>
+                                        <p class="n-n-date">2023-04-05</p>
+                                    </div>
                                 </div>
-                            </div>
-                                <button class="line-btn point-l-w">바로가기</button>
+                                <button class="line-btn n-n-btn">더보기</button>
+                            </a>
                         </div>
-                        
-                        <div class="news-content-container">
-                            <div class="news-content">
-                                <p class="news-top">news</p>
-                                <div class="n-n-text-container">
-                                    <h3 class="n-n-title">동아제약, '유기동물 보호' 임직원 봉사…"입양문화 확산"</h3>
-                                    <p class="n-n-content-text">제약기업 동아제약이 지난 16일 동대문구에 위치한 유기동물 입양센터 발라당에서 유기동물보호 봉사활동을 진행했다.<br>
-                                        19일 동아제약에 따르면 이번 봉사활동은 지난 달 '동물과 함께 행복한 세상(동행)'과 유기동물 보호 및 입양 활성화를 위한 업무협약의 일환으로 진행됐다.</p>
-                                    <p class="n-n-date">2024-05-19</p>
-                                </div>
-                            </div>
-                            <button class="line-btn point-l-w">바로가기</button>
-                        </div>
-                    </div>
+                </div>
+
             </section>
         </main>
 
+        <footer id="footer">
+            <div class="container">
+                <div class="footer-logo-container">
+                    <svg width="130" height="23" viewBox="0 0 130 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_116_1015)">
+                        <path d="M74.3438 2.59375V20.7793H77.3677V10.7298H80.503V8.54897H77.3677V2.59375H74.3438Z" fill="white"/>
+                        <path d="M64.4212 2.36719C60.3072 2.36719 56.9727 6.36835 56.9727 11.3116C56.9727 16.2549 60.3072 20.2561 64.4212 20.2561C68.5351 20.2561 71.8696 16.2491 71.8696 11.3116C71.8696 6.37417 68.5351 2.36719 64.4212 2.36719ZM64.4212 18.4474C61.9715 18.4474 59.9907 15.2547 59.9907 11.3116C59.9907 7.36864 61.9715 4.17585 64.4212 4.17585C66.8708 4.17585 68.8516 7.36864 68.8516 11.3116C68.8516 15.2547 66.8649 18.4474 64.4212 18.4474Z" fill="white"/>
+                        <path d="M54.4588 10.16H44.7482V8.64789H53.1813V6.92065H36.0456V4.58857H53.1813V2.86133H33.0217V6.8276C33.0217 7.8337 33.9242 8.64789 35.0377 8.64789H41.4489V10.1541H31.7383V11.9744H54.4588V10.1541V10.16Z" fill="white"/>
+                        <path d="M32.8828 17.1567C32.8828 19.5701 37.4597 21.5184 43.1091 21.5184C48.7585 21.5184 53.3354 19.5643 53.3354 17.1567C53.3354 14.749 48.7585 12.7949 43.1091 12.7949C37.4597 12.7949 32.8828 14.749 32.8828 17.1567ZM50.1298 17.1101C50.1298 18.5873 46.9828 19.7911 43.1091 19.7911C39.2354 19.7911 36.0826 18.5873 36.0826 17.1101C36.0826 15.633 39.2296 14.4291 43.1091 14.4291C46.9887 14.4291 50.1298 15.633 50.1298 17.1101Z" fill="white"/>
+                        <path d="M126.887 10.0785H129.999V8.35124H126.887V6.43789H129.999V4.71064H126.887V2.59375H123.863V13.5039H126.887V10.0785Z" fill="white"/>
+                        <path d="M103.563 2.59375H100.633V20.7793H103.563V2.59375Z" fill="white"/>
+                        <path d="M99.0088 20.7793V2.59375H96.2252V8.54897H92.9375V10.7298H96.2252V20.7793H99.0088Z" fill="white"/>
+                        <path d="M113.859 2.37891C109.698 2.37891 106.328 4.77495 106.328 7.7293C106.328 10.6836 109.698 13.0797 113.859 13.0797C118.02 13.0797 121.389 10.6836 121.389 7.7293C121.389 4.77495 118.02 2.37891 113.859 2.37891ZM113.853 11.3524C111.356 11.3524 109.334 9.72406 109.334 7.71185C109.334 5.69964 111.356 4.07126 113.853 4.07126C116.349 4.07126 118.371 5.69964 118.371 7.71185C118.371 9.72406 116.349 11.3524 113.853 11.3524Z" fill="white"/>
+                        <path d="M108.566 16.2314H123.868V20.7734H126.892V14.4111H108.566V16.2314Z" fill="white"/>
+                        <path d="M88.6964 14.44C89.9857 16.144 91.9137 17.4583 93.748 18.3888L94.7384 16.6732C92.6697 15.4868 91.2574 13.8643 90.3725 11.8346C91.1402 10.2411 91.5504 8.51967 91.5504 6.78661V4.54759C91.5504 3.66943 90.8354 2.9541 89.9505 2.9541H83.3049V4.7744H88.4327V6.78661C88.4327 11.1425 86.1354 15.3589 82.1797 16.9407L83.0119 18.4179C85.356 17.5339 87.2782 16.1324 88.6964 14.4342V14.44Z" fill="white"/>
+                        <path d="M8.54912 22.815C8.54912 22.815 8.63702 18.4067 8.06271 16.7667C7.47668 15.1267 6.83204 12.4806 2.51297 9.72397C1.00686 8.75857 0.508728 8.8458 0.35636 8.93304C0.19813 9.02027 -0.0362834 9.42155 0.00473896 11.1953C0.0516217 12.9749 -0.0831661 17.8542 2.0207 20.006C4.12456 22.1578 5.75374 22.6696 8.54912 22.815Z" fill="white"/>
+                        <path d="M11.9611 11.1838C15.3425 5.81593 20.4293 3.92585 20.986 3.75719C21.4666 3.61762 21.7068 3.4606 21.7478 3.06513C21.7947 2.68712 21.1735 1.87293 19.3803 1.02966C16.9306 -0.127656 11.9611 0.000288571 11.9611 0.000288571C11.9611 0.000288571 6.99736 -0.127656 4.54774 1.02966C2.75447 1.87293 2.12742 2.68712 2.1743 3.06513C2.22118 3.4606 2.44974 3.6118 2.93615 3.75719C3.48702 3.92585 8.58552 5.81593 11.9611 11.1838Z" fill="white"/>
+                        <path d="M11.9595 22.9839C12.8502 22.9839 13.6648 22.9432 14.4149 22.8966C14.4149 22.8966 14.5028 18.9304 14.2567 17.459C13.9871 15.819 13.4187 13.2311 11.9595 11.2305C10.512 13.2252 9.93764 15.819 9.66806 17.459C9.42779 18.9304 9.51569 22.8966 9.51569 22.8966C10.26 22.949 11.0804 22.9839 11.9595 22.9839Z" fill="white"/>
+                        <path d="M15.3719 22.815C15.3719 22.815 15.284 18.4067 15.8642 16.7667C16.4502 15.1267 17.1007 12.4806 21.414 9.72397C22.9201 8.75857 23.4182 8.8458 23.5706 8.93304C23.7288 9.02027 23.9632 9.42155 23.9163 11.1953C23.8753 12.9749 24.0101 17.8542 21.9062 20.006C19.8024 22.1578 18.1732 22.6696 15.3719 22.815Z" fill="white"/>
+                        <path d="M1.49422 5.07735C1.18949 5.01919 0.984375 4.71678 0.984375 4.39111C0.984375 3.99564 1.30669 3.67578 1.69934 3.67578C1.7638 3.67578 1.89273 3.69323 1.98649 3.73975C1.98649 3.73975 5.22726 5.19948 7.27252 7.86886L7.21978 7.95028C4.48886 5.82757 1.49422 5.07735 1.49422 5.07735Z" fill="white"/>
+                        <path d="M0.767995 6.72961C0.463257 6.654 0.234704 6.38648 0.222983 6.06081C0.211263 5.66534 0.516 5.31641 0.914504 5.31641C1.00827 5.31641 1.1372 5.33967 1.23682 5.38038C1.23682 5.38038 4.50103 6.69471 6.54629 9.17218L6.48769 9.24197C3.6337 7.23557 0.767995 6.72961 0.767995 6.72961Z" fill="white"/>
+                        <path d="M0.625825 8.52586C0.326947 8.45607 0.110114 8.19436 0.0983936 7.88614C0.0808126 7.5023 0.37969 7.15918 0.772333 7.15918C0.795775 7.15918 0.924702 7.15918 1.04777 7.2057C1.04777 7.2057 4.19477 8.47933 5.83567 10.4508L5.78293 10.5381C3.04615 8.80501 0.625825 8.53167 0.625825 8.53167V8.52586Z" fill="white"/>
+                        <path d="M22.4248 5.07735C22.7354 5.01919 22.9405 4.71678 22.9405 4.39111C22.9405 3.99564 22.6123 3.67578 22.2138 3.67578C22.1552 3.67578 22.0263 3.69323 21.9267 3.73975C21.9267 3.73975 18.68 5.19948 16.6406 7.86886L16.6934 7.95028C19.4301 5.82757 22.4189 5.07735 22.4189 5.07735H22.4248Z" fill="white"/>
+                        <path d="M23.1572 6.72961C23.4561 6.654 23.6846 6.38648 23.6964 6.06081C23.7139 5.66534 23.3975 5.31641 23.0048 5.31641C22.9169 5.31641 22.7821 5.33967 22.6825 5.38038C22.6825 5.38038 19.4183 6.69471 17.3672 9.17218L17.4258 9.24197C20.2798 7.23557 23.1513 6.72379 23.1513 6.72379L23.1572 6.72961Z" fill="white"/>
+                        <path d="M23.2938 8.52586C23.5868 8.45607 23.8095 8.19436 23.8154 7.88614C23.8388 7.5023 23.54 7.15918 23.1532 7.15918C23.118 7.15918 22.995 7.15918 22.8719 7.2057C22.8719 7.2057 19.719 8.47933 18.0781 10.4508L18.1309 10.5381C20.8559 8.80501 23.288 8.53167 23.288 8.53167L23.2938 8.52586Z" fill="white"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_116_1015">
+                        <rect width="130" height="22.9834" fill="white"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                        
+                </div>
+                <div class="fixed-up-container">
+                    <div class="footer-nav-container">
+                    <ul class="nav-container">
+                        <li class="nav-li"><a href="#">인재채용</a></li>
+                        <li class="nav-li"><a href="#">사이트맵</a></li>
+                        <li class="nav-li"><a href="#">오시는길</a></li>
+                        <li class="nav-li"><a href="#">이용약관</a></li>
+                        <li class="nav-li"><a href="#">개인정보처리방침</a></li>
+                    </ul>
+                    <div class="sns-content-container">
+                        <a href="#" class="sns-content">
+                            <img src="dong-a-img/sns-icon-instagram.png" alt="instagram" class="sns-icon">
+                        </a>
+                        <a href="#" class="sns-content">
+                            <img src="dong-a-img/sns-icon-blog.png" alt="blog" class="sns-icon">
+                        </a>
+                        <a href="#" class="sns-content">
+                            <img src="dong-a-img/sns-icon-youtube.png" alt="youtube" class="sns-icon">
+                        </a>
+                        <a href="#" class="sns-content">
+                            <img src="dong-a-img/sns-icon-facebook.png" alt="facebook" class="sns-icon">
+                        </a>
+                    </div>
+                    <div class="company-information">
+                        <p>동아제약(주)서울특별시 동대문구 천호대로 64</p>
+                        <p>TEL 02-920-8112</p>
+                    </div>
+                    <div class="copyright">&copy;DONG-A PHARM. All rights reserved.</div>
+                </div>
+                <a href="#" class="top-icon">
+                    <p>TOP</p>
+                </a>
+
+            </div>
+
+        </footer>
+
+        <script src="makeSlider.js"></script>
+    <script>
+        makeSlider(document.querySelector('.my-slide'),2,4);
+
+        // const basicsHeaderContainer = document.getElementById('header-container')
+
+        // window.addEventListener('scroll',()=>{
+        //     if(window.scrollY>50) {
+        //         basicsHeaderContainer.classList.add('fix-header');
+        //     }else{
+        //         basicsHeaderContainer.classList.remove('fix-header');
+        //     }
+        // })
+        
+        
+    </script>
 </body>
-</html> 
+</html>
