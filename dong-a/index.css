@@ -107,8 +107,8 @@ a {
 #header-container{
     margin: 0 auto;
     padding: 0 32px;
-
-    width: 100%;
+    max-width: 1280px;
+    /* width: 100%; */
     height: 80px;
     display: flex;
     justify-content: space-between;
@@ -116,7 +116,7 @@ a {
 
     background-color: white;
 
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 #header-container.fix-header{
@@ -128,7 +128,7 @@ a {
 .header-container2{
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 56px;
 }
 
 .header-nav-contents{
@@ -141,12 +141,13 @@ a {
 }
 
 .nav-font-st{
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
-    color: var(--font-color-black1);
+    color: #757575;
 }
 
 /* ------------헤더 */
+/* 헤더 안에 헤더 컨테이너를 주는게 안정된 구조임 수정할 것 */
 
 section{
     margin: 0 auto;
@@ -318,6 +319,13 @@ section{
 
     gap: 16px;
 
+}
+
+.my-slide{
+    position: relative;
+    margin-bottom: 56px;
+    display: flex;
+    align-items: center;
 }
 
 /* ↑ section 2) new-product */
